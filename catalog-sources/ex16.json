@@ -1,0 +1,95 @@
+{
+ "catalogVersionPrefix": "tcgdex-en-ex16",
+ "fetch": {
+  "sourceName": "TCGdex",
+  "sourceURL": "https://api.tcgdex.net/v2/en",
+  "language": "en",
+  "setID": "ex16",
+  "allowMissingImages": true,
+  "excludedPrints": [
+   "ex16-14:holo",
+   "ex16-18:holo"
+  ],
+  "pricingForPlaceholderVariants": true,
+  "reverseFromStamp": "set-logo"
+ },
+ "recipes": [
+  {
+   "recipeID": "ex16-booster-sim-v1",
+   "version": 1,
+   "packSize": 9,
+   "duplicatesAllowed": true,
+   "disclaimer": "팩 내부 배합은 PackTrace 자체 시뮬레이션입니다. 게임 카드 9장 = 커먼 5 + 언커먼 2 + 레어 칸 1 + 리버스 칸 1은 공개 2차 자료(소매 상품 설명·팩 개봉 데이터베이스)를 따르고, 슬롯 안에서는 카드마다 같은 확률로 뽑습니다. 원본은 홀로 레어·ex·스타·시크릿을 대부분 '레어'로 묶어, 레어 칸에서 이들이 논홀로 레어와 같은 확률로 나옵니다. 박스 토퍼(박스 위에 붙은 대형 카드)는 넣지 않았고, 테마덱에만 있던 홀로 인쇄는 뺐습니다. 원본은 이 세트의 리버스 홀로를 세트 로고 도장 인쇄로만 기록해, 그 인쇄를 리버스로 읽었습니다.",
+   "slots": [
+    {
+     "count": 5,
+     "rarities": [
+      "Common"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 2,
+     "rarities": [
+      "Uncommon"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Rare"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [],
+     "variantRule": "reverse",
+     "anyRarityWithVariant": "reverse"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "packID": "tpcgi-en-ex16-booster",
+   "name": "Pokémon TCG: Power Keepers 부스터 팩 (영문판)",
+   "region": "US/International",
+   "language": "en",
+   "recipeID": "ex16-booster-sim-v1",
+   "artwork": {
+    "note": "실제 부스터 포장지 아트워크를 사용하지 않고 세트 로고·심볼로 만든 대체 포장입니다. 실물 포장 이미지가 아닙니다."
+   },
+   "verification": {
+    "status": "metadata-verified",
+    "evidence": [
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "Bulbapedia 세트·부스터 문서",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/EX_Power_Keepers_(TCG)",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 ex16",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/ex16",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     }
+    ],
+    "unverified": [
+     {
+      "item": "슬롯별 실제 봉입 확률",
+      "note": "등급별·슬롯별 실제 확률은 공식 자료가 없습니다. 앱은 각 슬롯 안에서 카드마다 같은 확률로 뽑으며 실제 확률 재현이라고 표시하지 않습니다."
+     },
+     {
+      "item": "포장 아트워크",
+      "note": "실제 부스터 포장 이미지를 사용하지 않습니다. 세트 로고 기반 대체 포장이며 앱 화면에 그렇게 표시합니다."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "catalogVersionPrefix": "tcgdex-en-30th",
+ "fetch": {
+  "sourceName": "TCGdex",
+  "sourceURL": "https://api.tcgdex.net/v2/en",
+  "language": "en",
+  "setID": "30th",
+  "allowMissingImages": true,
+  "extraSetIDs": [
+   "30th-c"
+  ],
+  "pricingForPlaceholderVariants": true,
+  "placeholderPrints": {
+   "30th": "holo",
+   "30th-c": "holo"
+  }
+ },
+ "recipes": [
+  {
+   "recipeID": "30th-booster-sim-v1",
+   "version": 1,
+   "packSize": 5,
+   "duplicatesAllowed": true,
+   "disclaimer": "팩 내부 배합은 PackTrace 자체 시뮬레이션입니다. 게임 카드 5장 = 커먼 2 + (커먼·일러스트 레어·클래식 컬렉션 중 1) + (레어·더블 레어·스페셜 일러스트 레어·퓨처리스틱 레어 중 1) + 피카츄 레어 1은 커뮤니티 개봉 분석(4,063팩)을 따른 것으로 공식 구성이 아닙니다. 모든 카드가 포일이지만 원본(TCGdex)에 인쇄 정보가 없어, TCGplayer 가격 목록 또는 조사 결과(포일)로 인쇄를 정했습니다. 원본에 없는 RGB 뮤 카드는 넣지 않았습니다.",
+   "slots": [
+    {
+     "count": 2,
+     "rarities": [
+      "Common"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Common",
+      "Illustration rare"
+     ],
+     "variantRule": "primary",
+     "wholeSetIDs": [
+      "30th-c"
+     ]
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Rare",
+      "Double rare",
+      "Special illustration rare",
+      "Futuristic Rare"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Pikachu Rare"
+     ],
+     "variantRule": "primary"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "packID": "tpcgi-en-30th-booster",
+   "name": "Pokémon TCG: Mega Evolution—30th Celebration 부스터 팩 (영문판)",
+   "region": "US/International",
+   "language": "en",
+   "recipeID": "30th-booster-sim-v1",
+   "artwork": {
+    "note": "실제 부스터 포장지 아트워크를 사용하지 않고 세트 로고·심볼로 만든 대체 포장입니다. 실물 포장 이미지가 아닙니다."
+   },
+   "verification": {
+    "status": "metadata-verified",
+    "evidence": [
+     {
+      "claim": "팩 장수·슬롯 구성(1차 근거)",
+      "source": "Pokémon TCG 공식 확장 페이지",
+      "url": "https://tcg.pokemon.com/en-us/expansions/30th-celebration/",
+      "checkedAt": "2026-09-24",
+      "kind": "primary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(1차 근거)",
+      "source": "Pokémon 공식 페이지",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
+      "checkedAt": "2026-09-24",
+      "kind": "primary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "TCGplayer 개봉 통계·구매 가이드 기사",
+      "url": "https://www.tcgplayer.com/content/article/Collector-s-Guide-to-Pok%C3%A9mon-TCG-30th-Celebration/bac99231-4293-4373-af64-6f5ed0d5735d/",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "PokeBeach 세트 가이드·팩 구성 기사",
+      "url": "https://www.pokebeach.com/2026/09/30th-celebration-english-set-guide-full-card-list-products-store-promotions-and-more",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "PokeBeach 세트 가이드·팩 구성 기사",
+      "url": "https://www.pokebeach.com/2026/09/30th-celebration-pull-rates-and-most-valuable-cards-worldwide-friendliest-pull-rates-of-the-modern-era",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "www.wargamer.com",
+      "url": "https://www.wargamer.com/pokemon-trading-card-game/30th-celebration-pull-rates",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "Bulbapedia 세트·부스터 문서",
+      "url": "https://bulbapedia.bulbagarden.net/w/api.php?action=parse&page=30th_Celebration_(TCG)&prop=wikitext&format=json",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 30th",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/30th",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 30th-c (같은 팩에 드는 서브세트)",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/30th-c",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "클래식 컬렉션 카드가 30주년 팩 세 번째 칸에 든다(1차 근거)",
+      "source": "Pokémon 공식 페이지",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-ultra-premium-collections-day-night",
+      "checkedAt": "2026-09-24",
+      "kind": "primary"
+     },
+     {
+      "claim": "클래식 컬렉션 카드가 30주년 팩 세 번째 칸에 든다(2차 근거)",
+      "source": "TCGplayer 개봉 통계·구매 가이드 기사",
+      "url": "https://www.tcgplayer.com/content/article/Collector-s-Guide-to-Pok%C3%A9mon-TCG-30th-Celebration/bac99231-4293-4373-af64-6f5ed0d5735d/",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     }
+    ],
+    "unverified": [
+     {
+      "item": "슬롯별 실제 봉입 확률",
+      "note": "등급별·슬롯별 실제 확률은 공식 자료가 없습니다. 앱은 각 슬롯 안에서 카드마다 같은 확률로 뽑으며 실제 확률 재현이라고 표시하지 않습니다."
+     },
+     {
+      "item": "기본 에너지·코드 카드",
+      "note": "실물 팩에 함께 든 기본 에너지(세트 번호 밖)와 온라인 코드 카드는 모델링하지 않습니다."
+     },
+     {
+      "item": "인쇄 변형",
+      "note": "원본 변형 정보가 자동 생성값이라 TCGplayer 가격 키(없으면 조사 결과: 전부 포일)로 인쇄를 정했습니다. 카드마다 근거를 남깁니다."
+     },
+     {
+      "item": "포장 아트워크",
+      "note": "실제 부스터 포장 이미지를 사용하지 않습니다. 세트 로고 기반 대체 포장이며 앱 화면에 그렇게 표시합니다."
+     },
+     {
+      "item": "판매 형태",
+      "note": "낱팩·부스터 박스로 팔지 않고 엘리트 트레이너 박스·부스터 번들·틴·컬렉션 상품 안에만 든 팩입니다(2차 자료). 앱은 그 팩 한 봉을 상품으로 다룹니다."
+     }
+    ]
+   }
+  }
+ ]
+}

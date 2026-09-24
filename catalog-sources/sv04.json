@@ -1,0 +1,121 @@
+{
+  "catalogVersionPrefix": "tcgdex-en-sv04",
+  "fetch": {
+    "sourceName": "TCGdex",
+    "sourceURL": "https://api.tcgdex.net/v2/en",
+    "language": "en",
+    "setID": "sv04"
+  },
+  "recipes": [
+    {
+      "recipeID": "sv04-booster-sim-v1",
+      "version": 1,
+      "packSize": 10,
+      "duplicatesAllowed": true,
+      "disclaimer": "팩 내부 배합은 PackTrace 자체 시뮬레이션입니다. 슬롯별 등급 구성(커먼 4 + 언커먼 3 + 포일 3, 포일 중 최소 1장 레어 이상)만 공개된 스칼렛&바이올렛 시리즈 국제판 부스터 구성을 따르고, 등급별 실제 봉입 확률은 공식 자료가 없어 슬롯 안에서 균등 추첨합니다.",
+      "slots": [
+        {
+          "count": 4,
+          "rarities": [
+            "Common"
+          ],
+          "variantRule": "primary"
+        },
+        {
+          "count": 3,
+          "rarities": [
+            "Uncommon"
+          ],
+          "variantRule": "primary"
+        },
+        {
+          "count": 1,
+          "rarities": [
+            "Common",
+            "Uncommon",
+            "Rare"
+          ],
+          "requiresVariant": "reverse",
+          "variantRule": "reverse"
+        },
+        {
+          "count": 1,
+          "rarities": [
+            "Common",
+            "Uncommon",
+            "Rare",
+            "Illustration rare",
+            "Special illustration rare",
+            "Hyper rare"
+          ],
+          "variantRule": "reverseIfAvailableElsePrimary"
+        },
+        {
+          "count": 1,
+          "rarities": [
+            "Rare",
+            "Double rare",
+            "Ultra Rare"
+          ],
+          "variantRule": "primary"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "packID": "tpcgi-en-sv04-booster",
+      "name": "Pokémon TCG: Scarlet & Violet—Paradox Rift 부스터 팩 (영문판)",
+      "region": "US/International",
+      "language": "en",
+      "recipeID": "sv04-booster-sim-v1",
+      "artwork": {
+        "note": "실제 부스터 포장지 아트워크를 사용하지 않고 세트 로고·심볼로 만든 대체 포장입니다. 실물 포장 이미지가 아닙니다."
+      },
+      "verification": {
+        "status": "ready-for-reward",
+        "evidence": [
+          {
+            "claim": "상품 존재(1차 근거): 공식 확장 페이지 featured products에 \"Pokémon TCG: Scarlet & Violet—Paradox Rift Sleeved Booster\"가 등재됨",
+            "source": "Pokémon 공식 TCG 사이트 확장 페이지(2026-09-24 라이브 확인, 자동 요약 도구로 본문 조회)",
+            "url": "https://tcg.pokemon.com/en-us/expansions/paradox-rift/",
+            "checkedAt": "2026-09-24",
+            "kind": "primary"
+          },
+          {
+            "claim": "팩 장수·구성(1차 근거): 스칼렛&바이올렛 시리즈 부스터 팩은 게임 카드 10장 = 커먼 4 + 언커먼 3 + 포일 3(최소 1장은 레어 이상), 여기에 에너지 1장과 TCG Live 코드 카드 1장이 더 들어감",
+            "source": "Pokemon Center Support, \"What can I expect in a Pokemon Trading Card Game Booster Pack?\" (2025-02-03 갱신, 라이브 페이지 직접 확인)",
+            "url": "https://support.pokemoncenter.com/hc/en-us/articles/360028979571-What-can-I-expect-in-a-Pok%C3%A9mon-Trading-Card-Game-Booster-Pack",
+            "checkedAt": "2026-09-22",
+            "kind": "primary"
+          },
+          {
+            "claim": "포일 3장의 세부 구성(리버스 홀로 2 + 레어 이상 1, 두 번째 리버스 슬롯은 일러스트/스페셜일러스트/하이퍼 레어로 대체 가능)은 1차 자료에 없고 2차·커뮤니티 자료에만 있음",
+            "source": "DigitalTQ Scarlet & Violet Pull Rates / Bulbapedia Booster pack (TCG) 국제판 표",
+            "url": "https://www.digitaltq.com/scarlet-violet-pull-rates-pokemon-tcg",
+            "checkedAt": "2026-09-22",
+            "kind": "secondary"
+          }
+        ],
+        "unverified": [
+          {
+            "item": "슬롯별 실제 봉입 확률",
+            "note": "등급별·슬롯별 실제 확률은 공개 자료가 없습니다. 앱은 각 슬롯 안에서 균등 추첨하며 실제 확률 재현이라고 표시하지 않습니다."
+          },
+          {
+            "item": "기본 에너지 카드",
+            "note": "실물 팩에는 기본 에너지 1장과 코드 카드가 더 들어갑니다. 세트 번호 체계 밖이라 앱은 게임 카드 10장만 모델링합니다."
+          },
+          {
+            "item": "포장 아트워크",
+            "note": "실제 부스터 포장 이미지를 사용하지 않습니다. 세트 로고 기반 대체 포장이며 앱 화면에 그렇게 표시합니다."
+          },
+          {
+            "item": "상품 발매일",
+            "note": "세트 발매일 2023-11-03(TCGdex 세트 정보)만 확인했고, 슬리브드 부스터 상품 자체의 발매일은 별도로 확인하지 않았습니다."
+          }
+        ]
+      }
+    }
+  ]
+}

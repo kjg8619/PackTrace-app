@@ -1,0 +1,28 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    # macOS 27 + Xcode 27 (Swift 6.4): the toolchain the project is developed
+    # and tested with. The image is a GitHub preview; see docs/TOOLCHAIN.md.
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain
+        run: |
+          xcode-select -p
+          swift --version
+      # Catalogues are not in Git. Set the repository variable
+      # PACKTRACE_CATALOG_BUNDLE to the https URL of the catalogue bundle
+      # attached to a release; the script checks every file against
+      # catalog-manifest.json.
+      - name: Install card catalogues
+        env:
+          PACKTRACE_CATALOG_BUNDLE: ${{ vars.PACKTRACE_CATALOG_BUNDLE }}
+        run: ./scripts/prepare-catalogs.sh
+      - name: Test
+        run: ./scripts/test.sh

@@ -1,0 +1,1110 @@
+{
+ "note": "Card catalogue snapshots the app is built with. They are generated from TCGdex data (MIT, see NOTICE) and are not tracked in Git: install them with scripts/prepare-catalogs.sh. contentHash is the app's own hash of the catalogue; sha256 is the file's.",
+ "pool": "pool-v3.json",
+ "catalogs": [
+  {
+   "file": "sv02.json",
+   "set": "sv02",
+   "catalogVersion": "tcgdex-en-sv02-20260922",
+   "contentHash": "sha256:01b050079b2f4bde03d25e4018b86a1254a7fe2bcb6574924ea9fd54f98481f9",
+   "sha256": "a9343ca36823ba0e2873b3527b0efa640ac14349186490cab7a7aa886b2eb1d1",
+   "bytes": 110406
+  },
+  {
+   "file": "sv03.json",
+   "set": "sv03",
+   "catalogVersion": "tcgdex-en-sv03-20260922",
+   "contentHash": "sha256:210d8fb00f0b2e04f653c561c781ad41df1e161f65eda273f844e49485903ef6",
+   "sha256": "7b63a0500307f748b34f870d750c4d35b93a4c01d4a8ad68fcb6cfea6e388fb9",
+   "bytes": 92997
+  },
+  {
+   "file": "tcgdex-en-30th-20260924.json",
+   "set": "30th",
+   "catalogVersion": "tcgdex-en-30th-20260924",
+   "contentHash": "sha256:909f36125a28a4050da6666c8bf9de2f6e2f3e682083f087ccd0dd294c886eff",
+   "sha256": "7e91857da87f12cd390e798366cd5561c5ad9ce94da8936cdf3ad4fd773e9d40",
+   "bytes": 83493
+  },
+  {
+   "file": "tcgdex-en-base1-20260924.json",
+   "set": "base1",
+   "catalogVersion": "tcgdex-en-base1-20260924",
+   "contentHash": "sha256:e4370b570247822481116dbfb8821c66dbb39fe79e4b5f75650c6016f4ef47f4",
+   "sha256": "a3baaa8cc05650dae1e17abdfd8338b02bdfea2ed6b81466d0bf3fd0b2088a52",
+   "bytes": 41761
+  },
+  {
+   "file": "tcgdex-en-base2-20260924.json",
+   "set": "base2",
+   "catalogVersion": "tcgdex-en-base2-20260924",
+   "contentHash": "sha256:e96f370a744e957128d39533dfef7434d84138404d6a002b0ef7683907adb229",
+   "sha256": "0f87c01fecc53543e842bf8d70eb5c962dfb7e5ccb76ce8ad867f5d04de2a7ce",
+   "bytes": 27526
+  },
+  {
+   "file": "tcgdex-en-base3-20260924.json",
+   "set": "base3",
+   "catalogVersion": "tcgdex-en-base3-20260924",
+   "contentHash": "sha256:20a42582e8366ab1eec50e85a2fc4f7d2e7be78f75c87ecfb6f4a9b22de5a472",
+   "sha256": "bc9c0062b685d0fb24c8f8cdd8f0beca2d51ca9352efe781999f2beee7144431",
+   "bytes": 26944
+  },
+  {
+   "file": "tcgdex-en-base4-20260924.json",
+   "set": "base4",
+   "catalogVersion": "tcgdex-en-base4-20260924",
+   "contentHash": "sha256:f824872924e69699e3d9352a555afb24cce741baea3a5c1dc25eaf14aa2d812b",
+   "sha256": "c4fef319fa48146be140f5a8400cd8a963add7db8b3ea40ac6917194b0572cd8",
+   "bytes": 50935
+  },
+  {
+   "file": "tcgdex-en-base5-20260924.json",
+   "set": "base5",
+   "catalogVersion": "tcgdex-en-base5-20260924",
+   "contentHash": "sha256:cf7a2290d11a5b5eb0a2dccd0d2064b05da46f37d8d8d2a0d1b9ce509f374f60",
+   "sha256": "d801949ba6cd5cbc4c2fcbc64e8dc1424f46e9a7fcde7e006259874d7499c88f",
+   "bytes": 33744
+  },
+  {
+   "file": "tcgdex-en-bw1-20260924.json",
+   "set": "bw1",
+   "catalogVersion": "tcgdex-en-bw1-20260924",
+   "contentHash": "sha256:072a73568ff51139804aa3fc9a13e3cb4d79a641835dbde29b5c6881916d08e7",
+   "sha256": "1f80ecf284a3e8f80c13bdce64e82f458138f77bb2f0f91e5d985f5e79baa7b0",
+   "bytes": 52365
+  },
+  {
+   "file": "tcgdex-en-bw10-20260924.json",
+   "set": "bw10",
+   "catalogVersion": "tcgdex-en-bw10-20260924",
+   "contentHash": "sha256:a6d4367092d68f4eaa327393e4ba1f6d652ccac06881bf5bff6164b66523bf25",
+   "sha256": "75e4acbdaebd2e5f316bd0b6187c7d6ef127104ef64f081ccb4bb5d08133ac06",
+   "bytes": 47825
+  },
+  {
+   "file": "tcgdex-en-bw11-20260924.json",
+   "set": "bw11",
+   "catalogVersion": "tcgdex-en-bw11-20260924",
+   "contentHash": "sha256:a99ab1ade31d75f6e2a06d81808e7e8ae0219b10b71000e68299159a505a2d86",
+   "sha256": "f59541c8250b2a137fff734ac5d594840c0329b48cb6c13d85708c3d89c1d512",
+   "bytes": 64359
+  },
+  {
+   "file": "tcgdex-en-bw2-20260924.json",
+   "set": "bw2",
+   "catalogVersion": "tcgdex-en-bw2-20260924",
+   "contentHash": "sha256:07151c75940140ab5ccea26bbbd658b4df0831918ceda47d020e19e86c7b7253",
+   "sha256": "337a097976578b88f1c9971ec493abd3b14186f8502c9b6bbe77d1365d93c4f5",
+   "bytes": 44886
+  },
+  {
+   "file": "tcgdex-en-bw3-20260924.json",
+   "set": "bw3",
+   "catalogVersion": "tcgdex-en-bw3-20260924",
+   "contentHash": "sha256:30d32c6c870aaf990e9ee11e0fdeaa76ce97dfcaaa9f85b0f2e684a94e789700",
+   "sha256": "3af376aa19aff92507140cf0379190639dc9d07185f062713037f4699252f747",
+   "bytes": 46560
+  },
+  {
+   "file": "tcgdex-en-bw4-20260924.json",
+   "set": "bw4",
+   "catalogVersion": "tcgdex-en-bw4-20260924",
+   "contentHash": "sha256:238bc075fa53f2dc3d77f3d3d6f35b696bee4976a3f626a87893276ee202c1a3",
+   "sha256": "28a27b55556fdc5f61eb799729430e736d1598cfb33502866cc9c7b25d608818",
+   "bytes": 46709
+  },
+  {
+   "file": "tcgdex-en-bw5-20260924.json",
+   "set": "bw5",
+   "catalogVersion": "tcgdex-en-bw5-20260924",
+   "contentHash": "sha256:61dfa4fd0a1af06dabd4b4247c27fe3c6d651afe14e7d22fa5e0a801c56b7faf",
+   "sha256": "d6e05cfa5b3446cac856189af9cb85ef655de8c14d7d173a2e72410f708b1347",
+   "bytes": 49392
+  },
+  {
+   "file": "tcgdex-en-bw6-20260924.json",
+   "set": "bw6",
+   "catalogVersion": "tcgdex-en-bw6-20260924",
+   "contentHash": "sha256:a4b9df6a699a3c88f9c7b01c4f73f4a7f8c6b6d2cb5e888297d7d6491ed15e82",
+   "sha256": "203735692151eab7d29d8d3708e139c3bdf48c5ce59358aef9226cb9015c7890",
+   "bytes": 56877
+  },
+  {
+   "file": "tcgdex-en-bw7-20260924.json",
+   "set": "bw7",
+   "catalogVersion": "tcgdex-en-bw7-20260924",
+   "contentHash": "sha256:989fd1d070db4407ce817fcf67af951b302e0835561c84d34ea45daa87ac1c89",
+   "sha256": "c4e83714ba88d413d98c36ec5297383f4f8ecc4f77681229f96539cfc26c3c5d",
+   "bytes": 67754
+  },
+  {
+   "file": "tcgdex-en-bw8-20260924.json",
+   "set": "bw8",
+   "catalogVersion": "tcgdex-en-bw8-20260924",
+   "contentHash": "sha256:f1553bf774081f74c5e25aecc25ad591ccc9d3aaca4b751524c52c9436af0a78",
+   "sha256": "19e28e90107c8eb7604e9e6f8ec215c446fe5357bd4566651072753a8afd7fb0",
+   "bytes": 61130
+  },
+  {
+   "file": "tcgdex-en-bw9-20260924.json",
+   "set": "bw9",
+   "catalogVersion": "tcgdex-en-bw9-20260924",
+   "contentHash": "sha256:e298a3260f8284bcde79a43be9e6d21834e3cb0acd0b7dc478c598ffc6e8e23f",
+   "sha256": "c33ef00ac5fb158bddefe62d8171921b226c314b7c58029a0d3ecc338dcff694",
+   "bytes": 54286
+  },
+  {
+   "file": "tcgdex-en-cel25-20260924.json",
+   "set": "cel25",
+   "catalogVersion": "tcgdex-en-cel25-20260924",
+   "contentHash": "sha256:3edb1df00a0892f1637b4c694549efcbde0f05dc480df6ce51abe69126228668",
+   "sha256": "fb54d78ebb4430019d8c455bfaa8344ba163242a358a217ace28e8263fa3cdd1",
+   "bytes": 24972
+  },
+  {
+   "file": "tcgdex-en-col1-20260924.json",
+   "set": "col1",
+   "catalogVersion": "tcgdex-en-col1-20260924",
+   "contentHash": "sha256:bf88568b055a51adde530f9656967644303ca0aa9b2a9ed5253001691fbdac07",
+   "sha256": "84d670026b6c1bc518c47f3bbdfd99e244b01e798d328a9942813d01981b89b9",
+   "bytes": 44371
+  },
+  {
+   "file": "tcgdex-en-dc1-20260924.json",
+   "set": "dc1",
+   "catalogVersion": "tcgdex-en-dc1-20260924",
+   "contentHash": "sha256:cf1d04c23c4c0c70f3ed522a6eb4d91b295fe35a313d90ff8310bf8378ff6478",
+   "sha256": "9d185c371711a9e6d74ba46fdc41645f4ee1787cb15a3397fef8bfb267013cb6",
+   "bytes": 20989
+  },
+  {
+   "file": "tcgdex-en-det1-20260924.json",
+   "set": "det1",
+   "catalogVersion": "tcgdex-en-det1-20260924",
+   "contentHash": "sha256:e029d79ee2289ef6d34d5a7e6bd892cddf441b06f8267a018f86d4cf186fd640",
+   "sha256": "d123881735181b2f8632d8161d7fa2a88232ddffc490a82e0ddfbe839293ac5b",
+   "bytes": 12917
+  },
+  {
+   "file": "tcgdex-en-dp1-20260924.json",
+   "set": "dp1",
+   "catalogVersion": "tcgdex-en-dp1-20260924",
+   "contentHash": "sha256:3e8bf2350b2f75a9d8b06a70402d729d710d04074a2a1abc069226f01254f64e",
+   "sha256": "f5532e64cdd521781903c2e7c0a8bf20850b4a21de356635d41d9f74e796da2a",
+   "bytes": 53431
+  },
+  {
+   "file": "tcgdex-en-dp2-20260924.json",
+   "set": "dp2",
+   "catalogVersion": "tcgdex-en-dp2-20260924",
+   "contentHash": "sha256:302bede8a1bb320a0e241ccf333b49d8055af9f506ad146edc89efb7b79bebda",
+   "sha256": "d84b9a09c0575e413ed2a9d9e5704c9c1da076f529880c19678dd5ec3c77737b",
+   "bytes": 49926
+  },
+  {
+   "file": "tcgdex-en-dp3-20260924.json",
+   "set": "dp3",
+   "catalogVersion": "tcgdex-en-dp3-20260924",
+   "contentHash": "sha256:627fe9ba35bfe7b0a243e10996b5951583e7739b0c2fa28492785694f1c0d78e",
+   "sha256": "ccb1b41361ed790d4b976fef52846b54c40942dff975431c18f11ca850fe0200",
+   "bytes": 52368
+  },
+  {
+   "file": "tcgdex-en-dp4-20260924.json",
+   "set": "dp4",
+   "catalogVersion": "tcgdex-en-dp4-20260924",
+   "contentHash": "sha256:1c5669ff2aada6d20db224d58d45417641c7e503ba9ac256f5ac5230c5568514",
+   "sha256": "e5b12cec01eb5e7184dd3902347596d5b18fc8b31ff3ac682bccb9b3c82049bd",
+   "bytes": 42771
+  },
+  {
+   "file": "tcgdex-en-dp5-20260924.json",
+   "set": "dp5",
+   "catalogVersion": "tcgdex-en-dp5-20260924",
+   "contentHash": "sha256:ee921fbcaff5d33448273f8944613a0355544793b24c4fa378a89f8915201e44",
+   "sha256": "067e1f861403f804c948bf6ab266f3a494ba483b7273b8131a3cae53f55a5916",
+   "bytes": 40632
+  },
+  {
+   "file": "tcgdex-en-dp6-20260924.json",
+   "set": "dp6",
+   "catalogVersion": "tcgdex-en-dp6-20260924",
+   "contentHash": "sha256:e2f875eba59851bf65e4a7d78de2cac4767abe6090abccd692adc85561ef80ce",
+   "sha256": "1c28a5a7cc2a50175b881d15245d837deb10e99eaeee54c5944713a59ed7b21f",
+   "bytes": 57306
+  },
+  {
+   "file": "tcgdex-en-dp7-20260924.json",
+   "set": "dp7",
+   "catalogVersion": "tcgdex-en-dp7-20260924",
+   "contentHash": "sha256:26a517af2f9752a6ef88b31eefa20b5c57bb1d38eb67615669dd3412dffeaeec",
+   "sha256": "bf92fef76ce394a493a1774a91dbd9258b847f6cc9da08cf2be1eaa8b1e6c8ee",
+   "bytes": 43547
+  },
+  {
+   "file": "tcgdex-en-dv1-20260924.json",
+   "set": "dv1",
+   "catalogVersion": "tcgdex-en-dv1-20260924",
+   "contentHash": "sha256:81521e12a96a15af1cb01219d210c76e9b8b6f7c6b49ed7279e4e87c65a2d193",
+   "sha256": "ea6633d5e0a42ab947e6821e80d6edff771483a207b2fda5f7456e28b0059685",
+   "bytes": 13636
+  },
+  {
+   "file": "tcgdex-en-ecard1-20260924.json",
+   "set": "ecard1",
+   "catalogVersion": "tcgdex-en-ecard1-20260924",
+   "contentHash": "sha256:b3a52c1fe1ae68f5b16c09a56099aa7f2083d37fb53e58480bb8c6a6d84b2bf0",
+   "sha256": "1db6f5e59698b5abd785792b2a4d38fa67a9dd0825205989e1db0c8f6e5cc066",
+   "bytes": 66698
+  },
+  {
+   "file": "tcgdex-en-ecard2-20260924.json",
+   "set": "ecard2",
+   "catalogVersion": "tcgdex-en-ecard2-20260924",
+   "contentHash": "sha256:a9ce0cb86f256a1e11d4a243deea3bf715bb002e3fe550dd041e488f248d841e",
+   "sha256": "852843513d66c8ab6aadd0f73b2c0b7346f660020c1dde06eb5033f0af783b29",
+   "bytes": 72159
+  },
+  {
+   "file": "tcgdex-en-ecard3-20260924.json",
+   "set": "ecard3",
+   "catalogVersion": "tcgdex-en-ecard3-20260924",
+   "contentHash": "sha256:542901d9ebb45b12a7fd091dce3e7a9d0b3f0ad46754876cfec8bd272fac99f2",
+   "sha256": "ad239cc3df149fab6d63e7330c5653ba59d10b8201ca0edb14f3daeb22d955d9",
+   "bytes": 71015
+  },
+  {
+   "file": "tcgdex-en-ex1-20260924.json",
+   "set": "ex1",
+   "catalogVersion": "tcgdex-en-ex1-20260924",
+   "contentHash": "sha256:f03aaa969c090c639a05ead34e4f4da17f0108ba4fa097205c7e865b8d6636a1",
+   "sha256": "1b40de781d7adff25809ea955aa67d5b89b0ae5262289693d519ebc18d481635",
+   "bytes": 45523
+  },
+  {
+   "file": "tcgdex-en-ex10-20260924.json",
+   "set": "ex10",
+   "catalogVersion": "tcgdex-en-ex10-20260924",
+   "contentHash": "sha256:6d34fdf1ecfff781eb132e695ba0e5cc5d68b8776d62fe583b893e52886090c0",
+   "sha256": "f59d46b41b27727b9d20e740a4b0cde41e8ffb0d39991f30503f4bcfda1b2e27",
+   "bytes": 57848
+  },
+  {
+   "file": "tcgdex-en-ex11-20260924.json",
+   "set": "ex11",
+   "catalogVersion": "tcgdex-en-ex11-20260924",
+   "contentHash": "sha256:b264a4dad1b2227d588d30e9c670f7a5c18efc662134039a9621b96faab8e583",
+   "sha256": "9ce1ad5ad1216aff7c719b17e8467fd331261c0671147549885d914d07b8b7a4",
+   "bytes": 51840
+  },
+  {
+   "file": "tcgdex-en-ex12-20260924.json",
+   "set": "ex12",
+   "catalogVersion": "tcgdex-en-ex12-20260924",
+   "contentHash": "sha256:cc5148ec02b9c4d52b1d4d0020eba0b088a40464b7a871a839320032c1c07bb3",
+   "sha256": "86908051542c0420e16bab7141eb3c2da4276de9212e975ba5c01d1df6540ab2",
+   "bytes": 42652
+  },
+  {
+   "file": "tcgdex-en-ex13-20260924.json",
+   "set": "ex13",
+   "catalogVersion": "tcgdex-en-ex13-20260924",
+   "contentHash": "sha256:92bdf847e04462ae05a9a5a5fca23915c0749c0fe21c7a618983eca80d30d7a6",
+   "sha256": "e65bdfe3ed499d35adf20c07a581a1a4e31722b2940e99acf994c02f9fec1f47",
+   "bytes": 50179
+  },
+  {
+   "file": "tcgdex-en-ex14-20260924.json",
+   "set": "ex14",
+   "catalogVersion": "tcgdex-en-ex14-20260924",
+   "contentHash": "sha256:8f3e3c4732e67aedfd766abe50410e50c270735ee66c5e2d64068cafb39765e6",
+   "sha256": "42e807c508b5e0a405463335f14996906a2539434a36adc7622e95dc55604ef2",
+   "bytes": 45396
+  },
+  {
+   "file": "tcgdex-en-ex15-20260924.json",
+   "set": "ex15",
+   "catalogVersion": "tcgdex-en-ex15-20260924",
+   "contentHash": "sha256:f94ab99eef6004ff2bf476acf76a7c43dc998b81676fceffcf14471db53c1f7f",
+   "sha256": "1ee2b9dd366bb7be4c4f492991287cba5536d13d9c33a2b4e02822f783b6880b",
+   "bytes": 45975
+  },
+  {
+   "file": "tcgdex-en-ex16-20260924.json",
+   "set": "ex16",
+   "catalogVersion": "tcgdex-en-ex16-20260924",
+   "contentHash": "sha256:98011aceba369740fe50b6e5223dde433fc9678b32556fd223ef74e59336446a",
+   "sha256": "04cec0f9607642b65bf4210a14f175c0e16421b5439ce47edbd69cfe35d50dd6",
+   "bytes": 48374
+  },
+  {
+   "file": "tcgdex-en-ex2-20260924.json",
+   "set": "ex2",
+   "catalogVersion": "tcgdex-en-ex2-20260924",
+   "contentHash": "sha256:bef2cdc5cf7919be624a254001000699df921837798f8c1de97806d4c4507b70",
+   "sha256": "84769f3dea15afdda85565b1991253398a8a11ce166544da77353ca229c7d9ef",
+   "bytes": 42119
+  },
+  {
+   "file": "tcgdex-en-ex3-20260924.json",
+   "set": "ex3",
+   "catalogVersion": "tcgdex-en-ex3-20260924",
+   "contentHash": "sha256:ba366f73989fa0a3b48bb9c20e3984450752e37fa68fdc591f3b932e60602371",
+   "sha256": "2bcc7c74b0382f2a05ead31a09a33ea740f30cde9681ce7a4b21a6332e1f4887",
+   "bytes": 42040
+  },
+  {
+   "file": "tcgdex-en-ex4-20260924.json",
+   "set": "ex4",
+   "catalogVersion": "tcgdex-en-ex4-20260924",
+   "contentHash": "sha256:2ca2747032379e87d4235eecddeb6e27e5217c2169c2c6e896c2a58e237353d5",
+   "sha256": "c7aea1785353292f6b7361f6e5b35d97222ae0b16f78fff8eea2a67e2ed693fc",
+   "bytes": 41529
+  },
+  {
+   "file": "tcgdex-en-ex5-20260924.json",
+   "set": "ex5",
+   "catalogVersion": "tcgdex-en-ex5-20260924",
+   "contentHash": "sha256:f79ea2f23e469ef4b457bb2c2c316c6725222752e530228d0a16d6d42935b00c",
+   "sha256": "745f6a6ad4d96056b6ec0f700ea60d65a5f975ea06d39c104e5265dc3e1dc62f",
+   "bytes": 42382
+  },
+  {
+   "file": "tcgdex-en-ex6-20260924.json",
+   "set": "ex6",
+   "catalogVersion": "tcgdex-en-ex6-20260924",
+   "contentHash": "sha256:a35b2a933266c55b2d00676e860783607994d4873982571544b68ddabfdcb68a",
+   "sha256": "fea9d698936a559decece47c3edf806cd2bca4ded12054bbaccb4294b19e701f",
+   "bytes": 47921
+  },
+  {
+   "file": "tcgdex-en-ex7-20260924.json",
+   "set": "ex7",
+   "catalogVersion": "tcgdex-en-ex7-20260924",
+   "contentHash": "sha256:5543c7699b563c749dbc2e9356f946b359d336387925f6b45577f3f034426992",
+   "sha256": "9360c6139a96899f47a8c6828540e6613b467bdcaa3a872cf7fa9924502937bd",
+   "bytes": 46339
+  },
+  {
+   "file": "tcgdex-en-ex8-20260924.json",
+   "set": "ex8",
+   "catalogVersion": "tcgdex-en-ex8-20260924",
+   "contentHash": "sha256:c7ec5e22a983867f8205dd3f6830468f66bc87700d9e54ee69a2eed34f1bf485",
+   "sha256": "b81a73ceddb209715b7a38ae389e512d6aee582533c1a3f0d7c7b7225f7345f9",
+   "bytes": 44272
+  },
+  {
+   "file": "tcgdex-en-ex9-20260924.json",
+   "set": "ex9",
+   "catalogVersion": "tcgdex-en-ex9-20260924",
+   "contentHash": "sha256:6b4682d5fd58e878d14cafe6bf9454c1bd63d0597c50b9160c3b969f649f43bd",
+   "sha256": "c762802ec4c395a0ead202db75f1c9d1ef689c6cf3f1ef24caf4d7b1e1a169a1",
+   "bytes": 43424
+  },
+  {
+   "file": "tcgdex-en-g1-20260924.json",
+   "set": "g1",
+   "catalogVersion": "tcgdex-en-g1-20260924",
+   "contentHash": "sha256:6122e9e1ad88ca75a2425a8d831292c08f0daef12c0f1ddc867a2c467144339e",
+   "sha256": "e51192634465e51af66640bf71406910f65a74653c65065ad64f49dd641fe2e5",
+   "bytes": 52787
+  },
+  {
+   "file": "tcgdex-en-gym1-20260924.json",
+   "set": "gym1",
+   "catalogVersion": "tcgdex-en-gym1-20260924",
+   "contentHash": "sha256:0205ac0f61505155c312523416b5bc3f368fe95d2cd9d53e7bc27a1360307174",
+   "sha256": "b60d685dfc1bae2656231c8028737af22d361e17d116f15dcf1bfe58c1ff69ec",
+   "bytes": 52116
+  },
+  {
+   "file": "tcgdex-en-gym2-20260924.json",
+   "set": "gym2",
+   "catalogVersion": "tcgdex-en-gym2-20260924",
+   "contentHash": "sha256:1935eae8bc9d61bec5d629f5492af9125f510da500ba7cb1adf852de929879f4",
+   "sha256": "8af756e81c9b90e878a0ba832ffccd01ae50cb77e03f66c13ba83b3cdb925869",
+   "bytes": 51385
+  },
+  {
+   "file": "tcgdex-en-hgss1-20260924.json",
+   "set": "hgss1",
+   "catalogVersion": "tcgdex-en-hgss1-20260924",
+   "contentHash": "sha256:97989eb3fdfba1d2dfa0d186d3526f6febdde21224c5f6fd4bed219b781d9a10",
+   "sha256": "3d189b04922f3178dd2e7925b2176f66ac173daa2699e93403d0710969ce4c22",
+   "bytes": 51812
+  },
+  {
+   "file": "tcgdex-en-hgss2-20260924.json",
+   "set": "hgss2",
+   "catalogVersion": "tcgdex-en-hgss2-20260924",
+   "contentHash": "sha256:8d38256e23e8ce258e9f82e8a3f0c30dda15103c62d2a59a40a1b2db2d3626d5",
+   "sha256": "14422e4e7fa94d517e2ada89ccc8af680de240af72239b87f0fd812a8fe1954b",
+   "bytes": 40782
+  },
+  {
+   "file": "tcgdex-en-hgss3-20260924.json",
+   "set": "hgss3",
+   "catalogVersion": "tcgdex-en-hgss3-20260924",
+   "contentHash": "sha256:87a612695723c6ae8d553c462ac5bae23bd9b8dfb4ad106c7edcb7423369a977",
+   "sha256": "98c8aed5f01245a55bb8972551b61e871829b23e69136150a9aa538b23854c0f",
+   "bytes": 38968
+  },
+  {
+   "file": "tcgdex-en-hgss4-20260924.json",
+   "set": "hgss4",
+   "catalogVersion": "tcgdex-en-hgss4-20260924",
+   "contentHash": "sha256:174be0662ae583def1a89a83fbf5c98dab877d1e9ee57c7f5c5fd6ab73054580",
+   "sha256": "9ad431890588f622929897a8f414363227bc9a8ddfeedc0cfeffaa4a00bf130a",
+   "bytes": 42655
+  },
+  {
+   "file": "tcgdex-en-lc-20260924.json",
+   "set": "lc",
+   "catalogVersion": "tcgdex-en-lc-20260924",
+   "contentHash": "sha256:25170564ec5e02f30dcb792f958315859d261244be5b2b619728560d2f0aa972",
+   "sha256": "6a4eb16921b778e5f2f755a0db75498e60019db15ff886f7f181d619fff9964e",
+   "bytes": 45244
+  },
+  {
+   "file": "tcgdex-en-me01-20260924.json",
+   "set": "me01",
+   "catalogVersion": "tcgdex-en-me01-20260924",
+   "contentHash": "sha256:7297bb0f97d54fef3dec70fdb0e9ba7723503174182e2bbd2528fab9ac1597bf",
+   "sha256": "d0cfe9c6b80a90d85b59bbf9db9f3e3fc33fa6eb05da1544a1e2a344637a43ac",
+   "bytes": 75053
+  },
+  {
+   "file": "tcgdex-en-me02-20260924.json",
+   "set": "me02",
+   "catalogVersion": "tcgdex-en-me02-20260924",
+   "contentHash": "sha256:519e0d1a8ee7e19fcc434612ea2a69cdaa98eaa55cd7719c739b288b84cf4247",
+   "sha256": "fa2dc004261367f9972154758181fbe87df8f16093c47e6f2440b618f378d193",
+   "bytes": 52728
+  },
+  {
+   "file": "tcgdex-en-me02.5-20260924.json",
+   "set": "me02.5",
+   "catalogVersion": "tcgdex-en-me02.5-20260924",
+   "contentHash": "sha256:60cdad29df61658314ec47caeaa71b52a03bfbdfa08073d8dbfb070220307200",
+   "sha256": "f5b0b299a9ff40bac0c911f7789b91614ba80605116d7a79693cea461abda419",
+   "bytes": 118100
+  },
+  {
+   "file": "tcgdex-en-me03-20260924.json",
+   "set": "me03",
+   "catalogVersion": "tcgdex-en-me03-20260924",
+   "contentHash": "sha256:ac2a6bf81bbbe071893a04838474a0a6dedb329691f2b3ee600f7a1e8163a7fb",
+   "sha256": "861ac3848e87e7cd7c3c49c46ef8904382cc8cef8721a7bf15a8b5b1baf5277f",
+   "bytes": 50675
+  },
+  {
+   "file": "tcgdex-en-me04-20260924.json",
+   "set": "me04",
+   "catalogVersion": "tcgdex-en-me04-20260924",
+   "contentHash": "sha256:568cf9d1230fa2b9c5aba8cfaa864ec722935fe73c02b2d86f14151830e084cb",
+   "sha256": "754e6cdcd2d5c511b98017452a3a4d71dc6a8d6735b6b11f154e74162c402e39",
+   "bytes": 49947
+  },
+  {
+   "file": "tcgdex-en-me05-20260924.json",
+   "set": "me05",
+   "catalogVersion": "tcgdex-en-me05-20260924",
+   "contentHash": "sha256:1c0c0b618d6c999a2934ef28b9158ce7a2e94fe57ed0f872e0c40b1be933c0ce",
+   "sha256": "997f2d8f18e6d0e9713327fdab80da2be826a2ba9e5baa383302786f80c9f416",
+   "bytes": 49930
+  },
+  {
+   "file": "tcgdex-en-neo1-20260924.json",
+   "set": "neo1",
+   "catalogVersion": "tcgdex-en-neo1-20260924",
+   "contentHash": "sha256:8c03c8577fbe69c74611749a1f0f307b72394506ed7226131117edef7c2dfece",
+   "sha256": "72f3daa11e6f8c8a9db2d593b7c4222a6926a5f34b69f1665a46e7e5f2f48424",
+   "bytes": 43033
+  },
+  {
+   "file": "tcgdex-en-neo2-20260924.json",
+   "set": "neo2",
+   "catalogVersion": "tcgdex-en-neo2-20260924",
+   "contentHash": "sha256:d7654697fde1208b58635c9618e303c7bf76a300174a1a59bb3ba09a0c73bf52",
+   "sha256": "1acf1f15670dd23d09344df95c0bf7ce5a8a53d8a51551d81b21e009572f4627",
+   "bytes": 30494
+  },
+  {
+   "file": "tcgdex-en-neo3-20260924.json",
+   "set": "neo3",
+   "catalogVersion": "tcgdex-en-neo3-20260924",
+   "contentHash": "sha256:589f6e21e3a9ed743d3c058ef8854eed10fcd82401a4efaf6b912cc258402e77",
+   "sha256": "9be1bfe9b47f9672ccecf352cb4ffd6697eafa6dd38402ec88db8c21aa7e1908",
+   "bytes": 27457
+  },
+  {
+   "file": "tcgdex-en-neo4-20260924.json",
+   "set": "neo4",
+   "catalogVersion": "tcgdex-en-neo4-20260924",
+   "contentHash": "sha256:e1a7047e54ece5646498f5e4d8f25bcf48d619684c8c9d4ec6170612c5c47292",
+   "sha256": "50f3946e8299a612d2ed1e606abb2a00ba27eb11ce60513623e26850ad0f5504",
+   "bytes": 44147
+  },
+  {
+   "file": "tcgdex-en-pl1-20260924.json",
+   "set": "pl1",
+   "catalogVersion": "tcgdex-en-pl1-20260924",
+   "contentHash": "sha256:0beae8e81a3fdb4c08131cf6b6524411bdecab71996c1924fd73d1084a9cd7c2",
+   "sha256": "f8cf78dd9b60291d435b9580e51002c5ca34be82fe68a80c57e0ebccd3614884",
+   "bytes": 53950
+  },
+  {
+   "file": "tcgdex-en-pl2-20260924.json",
+   "set": "pl2",
+   "catalogVersion": "tcgdex-en-pl2-20260924",
+   "contentHash": "sha256:29afa7e5d92ed83ae3ade3ea2457f1c0d10f14516edbc2db15dcc2fb53244664",
+   "sha256": "8bc66e0c50381dd74bb333197d3f0428f800f78c006e693f3079d09af1d6febe",
+   "bytes": 48733
+  },
+  {
+   "file": "tcgdex-en-pl3-20260924.json",
+   "set": "pl3",
+   "catalogVersion": "tcgdex-en-pl3-20260924",
+   "contentHash": "sha256:b5d66bd72467f5f7e0a2798d38181e49932659d0d08cc2a8dbe07a0e8d750a90",
+   "sha256": "5aae0230523a2ea2474d8592846d91063539e6577500c3ef579168331adb413c",
+   "bytes": 60635
+  },
+  {
+   "file": "tcgdex-en-pl4-20260924.json",
+   "set": "pl4",
+   "catalogVersion": "tcgdex-en-pl4-20260924",
+   "contentHash": "sha256:b026645988433c8c0865a8fc41fd4004fb4d3a482c3f5ce59372f5ce6f8f9419",
+   "sha256": "25b040c57a2cf715416088518928c2dc21d1f005d9f311e4e34d0048900df813",
+   "bytes": 45121
+  },
+  {
+   "file": "tcgdex-en-pop1-20260924.json",
+   "set": "pop1",
+   "catalogVersion": "tcgdex-en-pop1-20260924",
+   "contentHash": "sha256:0ca4eeba3eb977cb02a9e61930af514c6bca0776d00b38e9b5690cbeaa12a11c",
+   "sha256": "1cc16a5bad507ac9f7e8b06a779bd29b53d6b3a25d945e189fd9316d8f8f901b",
+   "bytes": 11510
+  },
+  {
+   "file": "tcgdex-en-pop2-20260924.json",
+   "set": "pop2",
+   "catalogVersion": "tcgdex-en-pop2-20260924",
+   "contentHash": "sha256:b3f8d5edf29412d1684fc2671063e5d359be4a1b78af88ccd9fbceb20631f4e9",
+   "sha256": "606fd40860c45fedb0a96d39fb18771622d84aaa3bf070ed818e3de1a7fd9049",
+   "bytes": 10347
+  },
+  {
+   "file": "tcgdex-en-pop3-20260924.json",
+   "set": "pop3",
+   "catalogVersion": "tcgdex-en-pop3-20260924",
+   "contentHash": "sha256:19aee41c3ad4ecc585071d79d8fbc01e69ab080ce216ba995f60fdbd7414ad95",
+   "sha256": "a36529dde27f3325a2791b438fc09dfcbcdd10ce269b52d514d765a904bc89a3",
+   "bytes": 10336
+  },
+  {
+   "file": "tcgdex-en-pop4-20260924.json",
+   "set": "pop4",
+   "catalogVersion": "tcgdex-en-pop4-20260924",
+   "contentHash": "sha256:ff12ba8f2fc630a3e8dbf1f6bc77c022fb6a5c70265bfe318efd80445865d44d",
+   "sha256": "7cb6ea0216ca2fa3c75c19eb5b16b976e1846a3e3663de5d4205bb4016aef7db",
+   "bytes": 10335
+  },
+  {
+   "file": "tcgdex-en-pop5-20260924.json",
+   "set": "pop5",
+   "catalogVersion": "tcgdex-en-pop5-20260924",
+   "contentHash": "sha256:7baf175018f3bc61337ac4055ea7dba392151e3b0e0899f6ed316f6ff9ec7561",
+   "sha256": "539352c63e804f0a02b40ce449df10d017b108cb6e12a9bf247e51ec97e90e78",
+   "bytes": 10372
+  },
+  {
+   "file": "tcgdex-en-pop6-20260924.json",
+   "set": "pop6",
+   "catalogVersion": "tcgdex-en-pop6-20260924",
+   "contentHash": "sha256:c6c98b91ae55a0132954bb212bc2f8308f8e7417261969f43a435d7e326e4505",
+   "sha256": "0fbbe7b3ea2b1f7f4578e4f04f09680c325094a8587b13a9ac23fad62ba703b0",
+   "bytes": 10121
+  },
+  {
+   "file": "tcgdex-en-pop7-20260924.json",
+   "set": "pop7",
+   "catalogVersion": "tcgdex-en-pop7-20260924",
+   "contentHash": "sha256:d3c24c4bad9990fa644f48168077839553142e07c35d3a2826ed02b900bae204",
+   "sha256": "61ee82bc95f21e9be79d5ce14c024498d3f8b9dfa6208e1d7f1f550451b7e0ba",
+   "bytes": 10335
+  },
+  {
+   "file": "tcgdex-en-pop8-20260924.json",
+   "set": "pop8",
+   "catalogVersion": "tcgdex-en-pop8-20260924",
+   "contentHash": "sha256:b9185eae8b1495e2990419ec10b642e66ee27ad28e2291ecb3a845d9a5e78f9a",
+   "sha256": "1cc2c6d4230396a915c6c56469fde9b1496c09b053d781687764bd8f5dd4ee04",
+   "bytes": 10425
+  },
+  {
+   "file": "tcgdex-en-pop9-20260924.json",
+   "set": "pop9",
+   "catalogVersion": "tcgdex-en-pop9-20260924",
+   "contentHash": "sha256:371b227b9f6335c8313f459aad1a094d1996be712f3fb4b1fab99276b52a70b7",
+   "sha256": "5c429f85f7171ddbbf6e3d02b92b4d2ce3684c166caf3d19ecbd49d355a7dd4a",
+   "bytes": 10395
+  },
+  {
+   "file": "tcgdex-en-sm1-20260924.json",
+   "set": "sm1",
+   "catalogVersion": "tcgdex-en-sm1-20260924",
+   "contentHash": "sha256:cdc47d4f7134920c83257220f8f0f8021ce2534647a2775f0bd72265df11b882",
+   "sha256": "1d7f42e0b5db412ad4fc54a412d3fe976b79eeaf2e8df1bc996b9240efba408c",
+   "bytes": 71626
+  },
+  {
+   "file": "tcgdex-en-sm10-20260924.json",
+   "set": "sm10",
+   "catalogVersion": "tcgdex-en-sm10-20260924",
+   "contentHash": "sha256:b2b8c2b3f5c1ed550b0ed55770ced5855856122f50864e3808838adcad051148",
+   "sha256": "5f2ccf505dcc5eda9399649e712a18b932a84aa1e800b3fab9b281d2262defb2",
+   "bytes": 100974
+  },
+  {
+   "file": "tcgdex-en-sm11-20260924.json",
+   "set": "sm11",
+   "catalogVersion": "tcgdex-en-sm11-20260924",
+   "contentHash": "sha256:badc38ba4d875ce3254078ddea7ed9b45b17c1e42a240850b53841f962d3e988",
+   "sha256": "0101c654b26c91993566f04fd875be1a831e377e525f20c3830a2da823bf3e3d",
+   "bytes": 110789
+  },
+  {
+   "file": "tcgdex-en-sm115-20260924.json",
+   "set": "sm115",
+   "catalogVersion": "tcgdex-en-sm115-20260924",
+   "contentHash": "sha256:d4ffedb72d7e0edb6853617bca5b57550daa32636c6ee2de4a162dfbb9a9567f",
+   "sha256": "785106d7237dfe15dc653eba88ba9a89ad52c771546641c0f6977e0d7b3864b7",
+   "bytes": 71842
+  },
+  {
+   "file": "tcgdex-en-sm12-20260924.json",
+   "set": "sm12",
+   "catalogVersion": "tcgdex-en-sm12-20260924",
+   "contentHash": "sha256:099b6c7ebebc8b686ad90ffc2fb51bed32222af173e030bbba4cb9a3f4750849",
+   "sha256": "353880ef3656cb557bf1ab316ac94d643026de6fc24c03cdc46e315b06ded59d",
+   "bytes": 116011
+  },
+  {
+   "file": "tcgdex-en-sm2-20260924.json",
+   "set": "sm2",
+   "catalogVersion": "tcgdex-en-sm2-20260924",
+   "contentHash": "sha256:d7fd83351f1fc049b7ae37ebe4ef0ed381d7aa5c0d0fb7cd310c3cfa17499cd5",
+   "sha256": "a04b856d177fc70831b9e0b4b39447693e2f1c526d7763e00ed05db78a801f19",
+   "bytes": 74030
+  },
+  {
+   "file": "tcgdex-en-sm3-20260924.json",
+   "set": "sm3",
+   "catalogVersion": "tcgdex-en-sm3-20260924",
+   "contentHash": "sha256:29615839e297be6a0572ba6c34fd1dbc9a54b06366cef970b6c7cd8ba90fba93",
+   "sha256": "8d463163d21466dcb39488ff8aa067300aedb2a0deed7f3a5ea54ed2e272b21e",
+   "bytes": 66432
+  },
+  {
+   "file": "tcgdex-en-sm3.5-20260924.json",
+   "set": "sm3.5",
+   "catalogVersion": "tcgdex-en-sm3.5-20260924",
+   "contentHash": "sha256:051de5a2d0afabdc99f6f627cd097b65823340f4da53347568965581cfd5b1a1",
+   "sha256": "cbd610ba8f95a510696800f738f52eeb08174ea86989538cc387ad648ebd50c4",
+   "bytes": 38992
+  },
+  {
+   "file": "tcgdex-en-sm4-20260924.json",
+   "set": "sm4",
+   "catalogVersion": "tcgdex-en-sm4-20260924",
+   "contentHash": "sha256:2ee7322b0ea89db981a72e34cccba8ba0b1096594a9f886961356b0ded806bdf",
+   "sha256": "c20a16278333f32150c84223c79c89da1133234893f516f8fb4415abdba653de",
+   "bytes": 56528
+  },
+  {
+   "file": "tcgdex-en-sm5-20260924.json",
+   "set": "sm5",
+   "catalogVersion": "tcgdex-en-sm5-20260924",
+   "contentHash": "sha256:8d6e8252a95aa46d7c1279e3ab8d781f4517e2f020f9e2cee53ced6335cad767",
+   "sha256": "cd9ced1ed72adc8d341083e28938e620901aea91121c7df2168fb71549445d08",
+   "bytes": 75915
+  },
+  {
+   "file": "tcgdex-en-sm6-20260924.json",
+   "set": "sm6",
+   "catalogVersion": "tcgdex-en-sm6-20260924",
+   "contentHash": "sha256:8a6569957b4317e7b2c0d1b60358a955c03d97214658de112405c591b6b2bb49",
+   "sha256": "1798feb60f4307c4c0d4d0723d6e621f40e6a53a5fa4a862fd106f50ab4eade4",
+   "bytes": 64059
+  },
+  {
+   "file": "tcgdex-en-sm7-20260924.json",
+   "set": "sm7",
+   "catalogVersion": "tcgdex-en-sm7-20260924",
+   "contentHash": "sha256:34cba2610e11dbf1cba446abe50c36e7f33fedb5463fd79c99fa2a28ab279943",
+   "sha256": "f6617ca202fedf007f66866fd1c57a57f127b63e3b2426382583833989794179",
+   "bytes": 79456
+  },
+  {
+   "file": "tcgdex-en-sm7.5-20260924.json",
+   "set": "sm7.5",
+   "catalogVersion": "tcgdex-en-sm7.5-20260924",
+   "contentHash": "sha256:d1ee5e4e3348e580bda29858615d1b628863f0ae7fb98b038cb3ec3cc51a848f",
+   "sha256": "e53599f78d2b6b4cae771433bdde0252162989fe7e462eb0553cb882ef7e081c",
+   "bytes": 37649
+  },
+  {
+   "file": "tcgdex-en-sm8-20260924.json",
+   "set": "sm8",
+   "catalogVersion": "tcgdex-en-sm8-20260924",
+   "contentHash": "sha256:c343e4cdd3eaa4f0dc1ebc3c5f3acca8c2edfb4fff6d727813174634de29c539",
+   "sha256": "d88c073595a763ef5c7b4b7c5936ed9ffde24bd08bd4ed91bdc41d8bfbfa66a8",
+   "bytes": 100521
+  },
+  {
+   "file": "tcgdex-en-sm9-20260924.json",
+   "set": "sm9",
+   "catalogVersion": "tcgdex-en-sm9-20260924",
+   "contentHash": "sha256:20f4a1f6e036f160866a999151b0831a8c03f5c352df30017b8ae65ef980a2f6",
+   "sha256": "ea66d28e2f94c36bfb9824b54178a056d4e7e2967c69dca5bda810e063fea2bf",
+   "bytes": 84434
+  },
+  {
+   "file": "tcgdex-en-sv01-20260922.json",
+   "set": "sv01",
+   "catalogVersion": "tcgdex-en-sv01-20260922",
+   "contentHash": "sha256:cdc1bf4c9d40e00e46710a04bf4a45db22e88560482e6e702bffebd9c0af8997",
+   "sha256": "8cda8e342b8c28f15b498c1238c91cbbb7d8fd893f758ae0841b92d028ee89f7",
+   "bytes": 104399
+  },
+  {
+   "file": "tcgdex-en-sv03.5-20260924.json",
+   "set": "sv03.5",
+   "catalogVersion": "tcgdex-en-sv03.5-20260924",
+   "contentHash": "sha256:a07c61994ac6235ffad84119a714b43f01baf5c2a8f8c0d6b3416ad8b338b051",
+   "sha256": "e453bf49141a4e391b1f2b9108efb2aacc4deeeb793961b547e9f13b69458ce4",
+   "bytes": 82972
+  },
+  {
+   "file": "tcgdex-en-sv04-20260923.json",
+   "set": "sv04",
+   "catalogVersion": "tcgdex-en-sv04-20260923",
+   "contentHash": "sha256:4f6b05667d7b3c2bd368e6990a96cb3e43772c696920b79e55ca67fb538501ec",
+   "sha256": "74ebc9e223c04a207ca145707e33f4cf341d26e06920bfb3d76e14ae47f21c5b",
+   "bytes": 104304
+  },
+  {
+   "file": "tcgdex-en-sv04.5-20260924.json",
+   "set": "sv04.5",
+   "catalogVersion": "tcgdex-en-sv04.5-20260924",
+   "contentHash": "sha256:e69d91e300477a98f0f7ce91bec13316109a4398d14c243f6e2902a91ea97f12",
+   "sha256": "b7823a83baf52250a3157b6fab2cf5d0ea5138501d4bb72f8cdd3f785134975c",
+   "bytes": 95233
+  },
+  {
+   "file": "tcgdex-en-sv05-20260923.json",
+   "set": "sv05",
+   "catalogVersion": "tcgdex-en-sv05-20260923",
+   "contentHash": "sha256:b0ac18c5850501c96fc913b2c0d112cff57116cbeaed44268428bedb269cf3a7",
+   "sha256": "9effbd80b2f37768d4e0dd28d5d3849664a64b921b96dc04b63dbaf359e10543",
+   "bytes": 88615
+  },
+  {
+   "file": "tcgdex-en-sv06-20260923.json",
+   "set": "sv06",
+   "catalogVersion": "tcgdex-en-sv06-20260923",
+   "contentHash": "sha256:1667eee132d983d19c8e353995892f9ea9b28e53be1428caca85f96142ccb653",
+   "sha256": "da813c2dff5339881cb3602767cb12454defe4480afddfa95bb6b7dcf10a147d",
+   "bytes": 91568
+  },
+  {
+   "file": "tcgdex-en-sv06.5-20260924.json",
+   "set": "sv06.5",
+   "catalogVersion": "tcgdex-en-sv06.5-20260924",
+   "contentHash": "sha256:6537dea7021b100162f38eb4df7a7f0a415baa2071ef35b556808dc79b34a6d6",
+   "sha256": "c2724f6bc8514577f4085c54528911298be2de434e6c7d097a68b2f0d302ca91",
+   "bytes": 43096
+  },
+  {
+   "file": "tcgdex-en-sv07-20260923.json",
+   "set": "sv07",
+   "catalogVersion": "tcgdex-en-sv07-20260923",
+   "contentHash": "sha256:0f072aa1ded69c6df15dbef87ce46ba92ca151e73f07f7359216ba1143c0521b",
+   "sha256": "9be76bdea9616c399ad657982d82210578dedb922cd4e5be9a5c7aa97a8e518e",
+   "bytes": 73913
+  },
+  {
+   "file": "tcgdex-en-sv08-20260923.json",
+   "set": "sv08",
+   "catalogVersion": "tcgdex-en-sv08-20260923",
+   "contentHash": "sha256:56dd721dd3f8595fa084a1a6ab0a86fbc663f954ff1c3bcfd9ba33e65132fcfe",
+   "sha256": "52b32a2dc433f5cd34d71d1e023d903ce17dbaade87e841e4b05846bd15255d6",
+   "bytes": 100659
+  },
+  {
+   "file": "tcgdex-en-sv08.5-20260924.json",
+   "set": "sv08.5",
+   "catalogVersion": "tcgdex-en-sv08.5-20260924",
+   "contentHash": "sha256:0577c61eaf0cc2ad1186800a7cce87f302643a599e73dd24569a46019330c13b",
+   "sha256": "721c7bb263ee6b6a105724a9c08f7b92a12fff1eb374a38d433891cb264752b7",
+   "bytes": 73266
+  },
+  {
+   "file": "tcgdex-en-sv09-20260923.json",
+   "set": "sv09",
+   "catalogVersion": "tcgdex-en-sv09-20260923",
+   "contentHash": "sha256:a406397302cce007e9dbfbe5412e865dfa58c80d40f0ddd04f13da97285a1b7f",
+   "sha256": "25a91895902656df4c24fef65447959edb7ca08a36c08ecc80c239f932d871d8",
+   "bytes": 78716
+  },
+  {
+   "file": "tcgdex-en-sv10-20260923.json",
+   "set": "sv10",
+   "catalogVersion": "tcgdex-en-sv10-20260923",
+   "contentHash": "sha256:8b6041c133d752fd2a1a1ca7528b4db64ba52466b1aea6dd64153003b278194c",
+   "sha256": "1cd6c7c51ee5247608f6ba6d5eab41d60efaafb2dbf14d55f8d589d06bd2accf",
+   "bytes": 98099
+  },
+  {
+   "file": "tcgdex-en-sv10.5b-20260924.json",
+   "set": "sv10.5b",
+   "catalogVersion": "tcgdex-en-sv10.5b-20260924",
+   "contentHash": "sha256:627d1c96960c9c5070a001e11c8cada4fa30e0b653470f2fd45c4a7302154d73",
+   "sha256": "d1d67e02b78905ea037d22e47cedabb6b8fda3fd405bb57a9c911c5cb89bd828",
+   "bytes": 70337
+  },
+  {
+   "file": "tcgdex-en-sv10.5w-20260924.json",
+   "set": "sv10.5w",
+   "catalogVersion": "tcgdex-en-sv10.5w-20260924",
+   "contentHash": "sha256:83ff563d5b10f8609dfb1da7bac2b191b110ca3931a6866c2e28932a5484c089",
+   "sha256": "fb3b9e9b70e8a4eec6b6ed5a3d528c23ac3cbdddd93ae1b88acde102b84cdc7e",
+   "bytes": 70721
+  },
+  {
+   "file": "tcgdex-en-swsh1-20260924.json",
+   "set": "swsh1",
+   "catalogVersion": "tcgdex-en-swsh1-20260924",
+   "contentHash": "sha256:619fe8b46bfd10fc0f52f68f06a7d66e447e4476ff06f914be75d63e9aad1015",
+   "sha256": "0b949da149f96c045829a7d5371f666b6ab79549283b54111b702018bcd4f335",
+   "bytes": 94542
+  },
+  {
+   "file": "tcgdex-en-swsh10-20260924.json",
+   "set": "swsh10",
+   "catalogVersion": "tcgdex-en-swsh10-20260924",
+   "contentHash": "sha256:8188bcba6ec4faeab264a137730d63dc09e824f8d3f2bc7ac174c64d57c40c81",
+   "sha256": "8524f552e5dc64d5f44d4f50b56c2c46dd4e822ccccdbba2e42201a4be36fda5",
+   "bytes": 98322
+  },
+  {
+   "file": "tcgdex-en-swsh10.5-20260924.json",
+   "set": "swsh10.5",
+   "catalogVersion": "tcgdex-en-swsh10.5-20260924",
+   "contentHash": "sha256:beb2d2de45da8a8eab378b7bbbc7aa4eee1d5aa633b581e92435bd0292ae30c4",
+   "sha256": "42e0d5f4b3c791ed500b0ce31643d98991dbea70566066bfd4d84eed81599c8c",
+   "bytes": 40452
+  },
+  {
+   "file": "tcgdex-en-swsh11-20260924.json",
+   "set": "swsh11",
+   "catalogVersion": "tcgdex-en-swsh11-20260924",
+   "contentHash": "sha256:20cd315345e7705a54387533369738ccf3f69c11f2c13d1639a6ca0e88dffb11",
+   "sha256": "224d7c930a376255cc33d29e6abede77116f183bc39aa71f6b78e2dc2ed1756c",
+   "bytes": 97657
+  },
+  {
+   "file": "tcgdex-en-swsh12-20260924.json",
+   "set": "swsh12",
+   "catalogVersion": "tcgdex-en-swsh12-20260924",
+   "contentHash": "sha256:e069a3edb0592c02368ac2d8a3584406c3f29b79113a165a156fb8110bdd4ba9",
+   "sha256": "7eedd97bc83e784227d2c2088e20bf71615562e7990f88cfb84ab9d2dcb98208",
+   "bytes": 97056
+  },
+  {
+   "file": "tcgdex-en-swsh12.5-20260924.json",
+   "set": "swsh12.5",
+   "catalogVersion": "tcgdex-en-swsh12.5-20260924",
+   "contentHash": "sha256:ff3d52665794cb6b6b11b690ac1a6f34a330c903a7423f634e28398aac162431",
+   "sha256": "efcb9285b3d0c10494c836c58960caa4def908cd866450644266877c8c7ac4a6",
+   "bytes": 93471
+  },
+  {
+   "file": "tcgdex-en-swsh2-20260924.json",
+   "set": "swsh2",
+   "catalogVersion": "tcgdex-en-swsh2-20260924",
+   "contentHash": "sha256:b3fe25fbb93539a2c70a28e37877bd1acb1b5ab354943307296768c226e7cc63",
+   "sha256": "3a68800e78c0a2c662c5f2515785263b3bee54a12f004b796a6f14bf550e0139",
+   "bytes": 82462
+  },
+  {
+   "file": "tcgdex-en-swsh3-20260924.json",
+   "set": "swsh3",
+   "catalogVersion": "tcgdex-en-swsh3-20260924",
+   "contentHash": "sha256:7f3f2aac6bcd365e371ffb79c8fd35410abca2c6661664e9a2a5fc56d8abd343",
+   "sha256": "c2f87f301f4666af45b15eabd96a8fd92acf2cdd13d556e515e9ed33db3c1740",
+   "bytes": 79669
+  },
+  {
+   "file": "tcgdex-en-swsh3.5-20260924.json",
+   "set": "swsh3.5",
+   "catalogVersion": "tcgdex-en-swsh3.5-20260924",
+   "contentHash": "sha256:1dae16c599a251f4b195e0903ff6976f4b19c3e90beb04b703441bf2a3c43df4",
+   "sha256": "938415d682a20fa901e45e381cca313f95cd451ac2620c3e31a23fc1ee5a9fcb",
+   "bytes": 38451
+  },
+  {
+   "file": "tcgdex-en-swsh4-20260924.json",
+   "set": "swsh4",
+   "catalogVersion": "tcgdex-en-swsh4-20260924",
+   "contentHash": "sha256:417f26dbfafbfcbf5a4117064fd48a95ac502f0eddb55bdb1ae88d62a18db440",
+   "sha256": "912a9fd82c96b9cfa0731a1f5428db1cc77d8c495ae44ac0cf47ccdf5ffd4c7e",
+   "bytes": 79266
+  },
+  {
+   "file": "tcgdex-en-swsh4.5-20260924.json",
+   "set": "swsh4.5",
+   "catalogVersion": "tcgdex-en-swsh4.5-20260924",
+   "contentHash": "sha256:642b39da5d42f6a2def8f4cb3874b82845ef32dee43e37f534eac988fef78cc6",
+   "sha256": "b32ebccb1aca5db546d24c481165692616061e78d62496603a8fa47ab8d957b0",
+   "bytes": 79554
+  },
+  {
+   "file": "tcgdex-en-swsh5-20260924.json",
+   "set": "swsh5",
+   "catalogVersion": "tcgdex-en-swsh5-20260924",
+   "contentHash": "sha256:36cec3348481a792583a8dab6cb0aef25795c95cf1d384a373f599a7dbc13ffa",
+   "sha256": "3615047914ace2c77c7dae2194195d132570eec05dd1175de1b747493ab58a0f",
+   "bytes": 72996
+  },
+  {
+   "file": "tcgdex-en-swsh6-20260924.json",
+   "set": "swsh6",
+   "catalogVersion": "tcgdex-en-swsh6-20260924",
+   "contentHash": "sha256:274abdba23e2426b29807938df6745e9b2989f121e72696c8f2f734edf52148b",
+   "sha256": "dfb9dc5f2322eafd33f71705745c1bb02e0523ee2f36c9674ef71e9f2a25fb67",
+   "bytes": 91057
+  },
+  {
+   "file": "tcgdex-en-swsh7-20260924.json",
+   "set": "swsh7",
+   "catalogVersion": "tcgdex-en-swsh7-20260924",
+   "contentHash": "sha256:90f936e249fc375992870fd0cd18b1cefe559bf5d1db75c7802654b0bf2cb04f",
+   "sha256": "5c5ea0406d61453d5f8af3a0fee2fe75d99abe22f482ae60180f5a716f310814",
+   "bytes": 91635
+  },
+  {
+   "file": "tcgdex-en-swsh8-20260924.json",
+   "set": "swsh8",
+   "catalogVersion": "tcgdex-en-swsh8-20260924",
+   "contentHash": "sha256:13560c591cbb145da73586acfa68ed7b99d6a1fcd930f6ae03d164f06a8109b3",
+   "sha256": "e096827ca892dbc58f3427ab2d3d8ebefc84b96030991d88e5fa1977081a4d7c",
+   "bytes": 110105
+  },
+  {
+   "file": "tcgdex-en-swsh9-20260924.json",
+   "set": "swsh9",
+   "catalogVersion": "tcgdex-en-swsh9-20260924",
+   "contentHash": "sha256:d234a34eada29ecae20bd3719357bfcdb0384ab9ec9546397b40660fd88745d9",
+   "sha256": "192f9933dc5546d5a916c6a8557c09eb9be14ff7307190566a055ec6d736b87c",
+   "bytes": 85432
+  },
+  {
+   "file": "tcgdex-en-xy1-20260924.json",
+   "set": "xy1",
+   "catalogVersion": "tcgdex-en-xy1-20260924",
+   "contentHash": "sha256:559bb2e7a01817c76df6ada998404dba5d9b8e6ad66909bdcff8026ba2ae0aac",
+   "sha256": "c1da2fad118f00d61746bcf698c0bf070d11ec4a0b5d4f0516fd1d9736280c34",
+   "bytes": 64877
+  },
+  {
+   "file": "tcgdex-en-xy10-20260924.json",
+   "set": "xy10",
+   "catalogVersion": "tcgdex-en-xy10-20260924",
+   "contentHash": "sha256:319e164714d1232b2ea5e4bac45f800cbdd5aadfaa1e3778af3839f9be3f3f1f",
+   "sha256": "359605db723b27ff0a9a94bb1c5b38e43f9d62cd933e186c7076761b722858ec",
+   "bytes": 56411
+  },
+  {
+   "file": "tcgdex-en-xy11-20260924.json",
+   "set": "xy11",
+   "catalogVersion": "tcgdex-en-xy11-20260924",
+   "contentHash": "sha256:5ea11385637b082989662d04105d862e51a948b4d541e7336a7a80dc7f4427c2",
+   "sha256": "7d1a1446097ad21c3a34e222d9c59dc5f7cf5104e0e1e897de02b7e44c9639a7",
+   "bytes": 52533
+  },
+  {
+   "file": "tcgdex-en-xy12-20260924.json",
+   "set": "xy12",
+   "catalogVersion": "tcgdex-en-xy12-20260924",
+   "contentHash": "sha256:907347bb09440e1f8aa5c191ffc3e693dcb23dab59195f769e4d45c8c5715d6c",
+   "sha256": "12ac59c2f123bb4c2d1828bfc8397257dbaafd5c41022cb900c9cbb8712319f4",
+   "bytes": 52077
+  },
+  {
+   "file": "tcgdex-en-xy2-20260924.json",
+   "set": "xy2",
+   "catalogVersion": "tcgdex-en-xy2-20260924",
+   "contentHash": "sha256:ed766d38de33f761253f17a4522696ca7498a683f65f633e32942faa706fad6b",
+   "sha256": "90e0fbfdc48d63f2415af484daa637608e939eac60b3c49aa72a8dec5035d069",
+   "bytes": 49134
+  },
+  {
+   "file": "tcgdex-en-xy3-20260924.json",
+   "set": "xy3",
+   "catalogVersion": "tcgdex-en-xy3-20260924",
+   "contentHash": "sha256:b0d1a967aeea9362dfad12acde5bd07abb3f23842c708665db620ef6e5a3d5e5",
+   "sha256": "7c5c23e17dc4bb0e06d84e1f80a1ea57906f893cf663a10e2bd720f1766386ea",
+   "bytes": 51113
+  },
+  {
+   "file": "tcgdex-en-xy4-20260924.json",
+   "set": "xy4",
+   "catalogVersion": "tcgdex-en-xy4-20260924",
+   "contentHash": "sha256:9eb0b1743fd64953a28f9276793a98b44ec4df24ef37fb3ecf87eee5b8d5843b",
+   "sha256": "5907158b36e48aac0386f14f16c4d4d710e1aa6c892c48a04dd76dff223705a7",
+   "bytes": 54540
+  },
+  {
+   "file": "tcgdex-en-xy5-20260924.json",
+   "set": "xy5",
+   "catalogVersion": "tcgdex-en-xy5-20260924",
+   "contentHash": "sha256:df6564d62db3cd2313966a6e49123f7465b6b906cd0a9514d619c12303fd6817",
+   "sha256": "f55a4475760a42293e43caf5c43136c5dbaed4ece0e12ab4d83a6f533f463a92",
+   "bytes": 71743
+  },
+  {
+   "file": "tcgdex-en-xy6-20260924.json",
+   "set": "xy6",
+   "catalogVersion": "tcgdex-en-xy6-20260924",
+   "contentHash": "sha256:3a13d02e22d987e4b885cbc29803338516bdb4aad25f593aa16af5b4eca49b5c",
+   "sha256": "30cdfa12d44be08a672d1e32d5477c7a4b39112a1a3e80ddcdbf28232d7a3f03",
+   "bytes": 49693
+  },
+  {
+   "file": "tcgdex-en-xy7-20260924.json",
+   "set": "xy7",
+   "catalogVersion": "tcgdex-en-xy7-20260924",
+   "contentHash": "sha256:a74bac0b98ebe1e285ce4a3aec100ed099f36522501cbc000d0100203a91850f",
+   "sha256": "230d57450f69d1071682dced29d3bf0fe1436ae6e6bec3bb517733ba82808ec5",
+   "bytes": 45638
+  },
+  {
+   "file": "tcgdex-en-xy8-20260924.json",
+   "set": "xy8",
+   "catalogVersion": "tcgdex-en-xy8-20260924",
+   "contentHash": "sha256:209f4cc18cca3e603361ccd0a597a02053792af8e744922c837e5121649a1723",
+   "sha256": "1ad26c4cf8572c577ff3dc55f0f3b94dbd71e659dd339fb76849739cce0e3497",
+   "bytes": 72336
+  },
+  {
+   "file": "tcgdex-en-xy9-20260924.json",
+   "set": "xy9",
+   "catalogVersion": "tcgdex-en-xy9-20260924",
+   "contentHash": "sha256:f681f4334f735bf1c74df4250a346deceda23efa580eb414e38b9c15df75c421",
+   "sha256": "dcc196a49c52438961d7a9bb901ebabc2d3fb839a2599b5e83b19d2f7b19cab0",
+   "bytes": 55831
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "catalogVersionPrefix": "tcgdex-en-dc1",
+ "fetch": {
+  "sourceName": "TCGdex",
+  "sourceURL": "https://api.tcgdex.net/v2/en",
+  "language": "en",
+  "setID": "dc1",
+  "allowMissingImages": true,
+  "pricingForPlaceholderVariants": true
+ },
+ "recipes": [
+  {
+   "recipeID": "dc1-booster-sim-v1",
+   "version": 1,
+   "packSize": 7,
+   "duplicatesAllowed": true,
+   "disclaimer": "팩 내부 배합은 PackTrace 자체 시뮬레이션입니다. 더블 크라이시스 팩은 7장 중 홀로 1장·리버스 1장이 확실하고(공식·2차 자료), 나머지 5장의 커먼 3 + 언커먼 2 나눔은 추정입니다. 인쇄는 원본의 TCGplayer 가격 목록으로 정했습니다.",
+   "slots": [
+    {
+     "count": 3,
+     "rarities": [
+      "Common"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 2,
+     "rarities": [
+      "Uncommon"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [],
+     "variantRule": "reverse",
+     "anyRarityWithVariant": "reverse"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Rare",
+      "Ultra Rare"
+     ],
+     "variantRule": "primary"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "packID": "tpcgi-en-dc1-booster",
+   "name": "Pokémon TCG: XY—Double Crisis 부스터 팩 (영문판)",
+   "region": "US/International",
+   "language": "en",
+   "recipeID": "dc1-booster-sim-v1",
+   "artwork": {
+    "note": "실제 부스터 포장지 아트워크를 사용하지 않고 세트 로고·심볼로 만든 대체 포장입니다. 실물 포장 이미지가 아닙니다."
+   },
+   "verification": {
+    "status": "metadata-verified",
+    "evidence": [
+     {
+      "claim": "팩 장수·슬롯 구성(1차 근거)",
+      "source": "Pokémon 공식 페이지",
+      "url": "https://www.pokemon.com/us/pokemon-tcg/double-crisis",
+      "checkedAt": "2026-09-24",
+      "kind": "primary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "PokeBeach 세트 가이드·팩 구성 기사",
+      "url": "https://www.pokebeach.com/2015/03/all-english-double-crisis-scans",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "facetofacegames.com",
+      "url": "https://facetofacegames.com/en-us/products/pokemon-tcg-double-crisis-team-magma-blister-pack",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "Bulbapedia 세트·부스터 문서",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Double_Crisis_(TCG)",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 dc1",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/dc1",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     }
+    ],
+    "unverified": [
+     {
+      "item": "슬롯별 실제 봉입 확률",
+      "note": "등급별·슬롯별 실제 확률은 공식 자료가 없습니다. 앱은 각 슬롯 안에서 카드마다 같은 확률로 뽑으며 실제 확률 재현이라고 표시하지 않습니다."
+     },
+     {
+      "item": "인쇄 변형",
+      "note": "원본 변형 정보가 자동 생성값인 카드는 TCGplayer 가격 키로 인쇄를 정했고, 카드마다 근거(printEvidence)를 남깁니다. 가격 키도 없는 울트라·시크릿 레어(블랙&화이트는 EX 포함)는 조사 결과대로 포일로, 나머지는 원본 값 그대로 둡니다."
+     },
+     {
+      "item": "포장 아트워크",
+      "note": "실제 부스터 포장 이미지를 사용하지 않습니다. 세트 로고 기반 대체 포장이며 앱 화면에 그렇게 표시합니다."
+     },
+     {
+      "item": "판매 형태",
+      "note": "팀 마그마·팀 아쿠아 블리스터(7장 팩 4개) 안에만 든 팩입니다."
+     }
+    ]
+   }
+  }
+ ]
+}

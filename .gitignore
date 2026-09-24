@@ -1,0 +1,21 @@
+.build/
+.swiftpm/
+DerivedData/
+*.xcuserstate
+.DS_Store
+dist/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Installed pack artwork images: publisher artwork kept on this machine only.
+# The registry that describes them (Resources/pack-artwork/*.json) IS tracked.
+**/pack-artwork/*.png
+**/pack-artwork/*.jpg
+**/pack-artwork/*.jpeg
+**/pack-artwork/*.webp
+**/pack-artwork/*.incoming
+
+# Card catalogue snapshots: installed with scripts/prepare-catalogs.sh
+# (catalog-manifest.json names them), not tracked.
+Sources/PackTraceCore/Resources/catalog/*.json

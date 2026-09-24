@@ -1,0 +1,118 @@
+{
+ "catalogVersionPrefix": "tcgdex-en-swsh12",
+ "fetch": {
+  "sourceName": "TCGdex",
+  "sourceURL": "https://api.tcgdex.net/v2/en",
+  "language": "en",
+  "setID": "swsh12",
+  "allowMissingImages": true,
+  "extraSetIDs": [
+   "swsh12tg"
+  ],
+  "pricingForPlaceholderVariants": true,
+  "placeholderPrints": {
+   "swsh12tg": "holo"
+  }
+ },
+ "recipes": [
+  {
+   "recipeID": "swsh12-booster-sim-v1",
+   "version": 1,
+   "packSize": 10,
+   "duplicatesAllowed": true,
+   "disclaimer": "팩 내부 배합은 PackTrace 자체 시뮬레이션입니다. 게임 카드 10장 = 커먼 5 + 언커먼 3 + 리버스 칸 1 + 레어 칸 1은 공개 2차 자료(TCGplayer 대량 개봉 통계 등)를 따르고, 슬롯 안에서는 카드마다 같은 확률로 뽑습니다. 리버스 칸은 원본이 리버스 인쇄를 기록한 모든 카드입니다. 레디언트 레어는 리버스 칸에서 나옵니다(2차 자료). 서브세트(swsh12tg)는 리버스 칸에서 나옵니다(2차 자료).",
+   "slots": [
+    {
+     "count": 5,
+     "rarities": [
+      "Common"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 3,
+     "rarities": [
+      "Uncommon"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Radiant Rare"
+     ],
+     "variantRule": "reverseIfAvailableElsePrimary",
+     "anyRarityWithVariant": "reverse",
+     "wholeSetIDs": [
+      "swsh12tg"
+     ]
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Rare",
+      "Holo Rare",
+      "Holo Rare V",
+      "Holo Rare VMAX",
+      "Holo Rare VSTAR",
+      "Ultra Rare",
+      "Secret Rare"
+     ],
+     "variantRule": "primary"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "packID": "tpcgi-en-swsh12-booster",
+   "name": "Pokémon TCG: Sword & Shield—Silver Tempest 부스터 팩 (영문판)",
+   "region": "US/International",
+   "language": "en",
+   "recipeID": "swsh12-booster-sim-v1",
+   "artwork": {
+    "note": "실제 부스터 포장지 아트워크를 사용하지 않고 세트 로고·심볼로 만든 대체 포장입니다. 실물 포장 이미지가 아닙니다."
+   },
+   "verification": {
+    "status": "metadata-verified",
+    "evidence": [
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "TCGplayer 개봉 통계·구매 가이드 기사",
+      "url": "https://www.tcgplayer.com/content/article/Pok%C3%A9mon-TCG-Silver-Tempest-Pull-Rates/6490d591-e582-4930-8446-00e190876d30/",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 swsh12",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/swsh12",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 swsh12tg (같은 팩에 드는 서브세트)",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/swsh12tg",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     }
+    ],
+    "unverified": [
+     {
+      "item": "슬롯별 실제 봉입 확률",
+      "note": "등급별·슬롯별 실제 확률은 공식 자료가 없습니다. 앱은 각 슬롯 안에서 카드마다 같은 확률로 뽑으며 실제 확률 재현이라고 표시하지 않습니다."
+     },
+     {
+      "item": "기본 에너지·코드 카드",
+      "note": "실물 팩에 함께 든 기본 에너지(세트 번호 밖)와 온라인 코드 카드는 모델링하지 않습니다."
+     },
+     {
+      "item": "포장 아트워크",
+      "note": "실제 부스터 포장 이미지를 사용하지 않습니다. 세트 로고 기반 대체 포장이며 앱 화면에 그렇게 표시합니다."
+     }
+    ]
+   }
+  }
+ ]
+}

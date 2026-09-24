@@ -1,0 +1,98 @@
+{
+ "catalogVersionPrefix": "tcgdex-en-ecard3",
+ "fetch": {
+  "sourceName": "TCGdex",
+  "sourceURL": "https://api.tcgdex.net/v2/en",
+  "language": "en",
+  "setID": "ecard3",
+  "allowMissingImages": true,
+  "pricingForPlaceholderVariants": true
+ },
+ "recipes": [
+  {
+   "recipeID": "ecard3-booster-sim-v1",
+   "version": 1,
+   "packSize": 9,
+   "duplicatesAllowed": true,
+   "disclaimer": "팩 내부 배합은 PackTrace 자체 시뮬레이션입니다. 게임 카드 9장 = 커먼 4 + (커먼 또는 홀로 레어 1) + 언커먼 2 + 레어 1 + 리버스 1은 원판 인쇄 시트·박스 개봉 분석(2차 자료)을 따른 것입니다. 실물은 약 3팩에 1번 홀로가 커먼 한 장을 대신하고, 앱은 그 칸을 커먼과 홀로 레어 중 카드마다 같은 확률로 뽑아 비슷한 비율을 냅니다. 크리스털 카드는 원본 분류대로 레어 칸에서 나옵니다.",
+   "slots": [
+    {
+     "count": 4,
+     "rarities": [
+      "Common"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Common",
+      "Holo Rare"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 2,
+     "rarities": [
+      "Uncommon"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [
+      "Rare"
+     ],
+     "variantRule": "primary"
+    },
+    {
+     "count": 1,
+     "rarities": [],
+     "variantRule": "reverse",
+     "anyRarityWithVariant": "reverse"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "packID": "wotc-en-ecard3-booster",
+   "name": "Pokémon TCG: Skyridge 부스터 팩 (영문판)",
+   "region": "US/International",
+   "language": "en",
+   "recipeID": "ecard3-booster-sim-v1",
+   "artwork": {
+    "note": "실제 부스터 포장지 아트워크를 사용하지 않고 세트 로고·심볼로 만든 대체 포장입니다. 실물 포장 이미지가 아닙니다."
+   },
+   "verification": {
+    "status": "metadata-verified",
+    "evidence": [
+     {
+      "claim": "팩 장수·슬롯 구성(2차 근거)",
+      "source": "Elite Fourum 영문판 등급 가이드(인쇄 시트·박스 개봉 분석)",
+      "url": "https://www.elitefourum.com/t/the-english-pokemon-card-rarity-guide/39762/34",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     },
+     {
+      "claim": "카드 목록·등급·인쇄 변형: TCGdex 영문 세트 ecard3",
+      "source": "TCGdex 공개 API(읽기 전용)",
+      "url": "https://api.tcgdex.net/v2/en/sets/ecard3",
+      "checkedAt": "2026-09-24",
+      "kind": "secondary"
+     }
+    ],
+    "unverified": [
+     {
+      "item": "슬롯별 실제 봉입 확률",
+      "note": "등급별·슬롯별 실제 확률은 공식 자료가 없습니다. 앱은 각 슬롯 안에서 카드마다 같은 확률로 뽑으며 실제 확률 재현이라고 표시하지 않습니다."
+     },
+     {
+      "item": "포장 아트워크",
+      "note": "실제 부스터 포장 이미지를 사용하지 않습니다. 세트 로고 기반 대체 포장이며 앱 화면에 그렇게 표시합니다."
+     }
+    ]
+   }
+  }
+ ]
+}

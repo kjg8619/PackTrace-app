@@ -1,0 +1,6 @@
+{
+  "artworks": [],
+  "generatedAt": "2026-09-24",
+  "note": "공개판: 출판사 포장 그림은 재배포하지 않아 비워 둔다. 쓸 권리가 있는 이미지를 docs/PACK_ARTWORK.md 형식으로 등록하고 ./scripts/fetch-pack-artwork.sh --write-manifest 로 설치한다. 등록이 없으면 모든 팩이 대체 포장이다.",
+  "registryVersion": 3
+}

@@ -1,0 +1,11 @@
+{
+  "poolVersion": "packs-v1",
+  "pricePoints": 100,
+  "economyVersion": 1,
+  "note": "교환 후보 팩 상품 목록. 가중치는 모두 1이며 같은 상품을 중복 등재하지 않는다. 후보의 카드 목록·개봉 규칙은 각 후보가 참조하는 catalogVersion 스냅샷에서 고정된다.",
+  "candidates": [
+    { "packID": "tpcgi-en-sv01-booster", "catalogVersion": "tcgdex-en-sv01-20260922", "weight": 1 },
+    { "packID": "tpcgi-en-sv02-booster", "catalogVersion": "tcgdex-en-sv02-20260922", "weight": 1 },
+    { "packID": "tpcgi-en-sv03-booster", "catalogVersion": "tcgdex-en-sv03-20260922", "weight": 1 }
+  ]
+}
