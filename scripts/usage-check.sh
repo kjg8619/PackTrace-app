@@ -25,10 +25,10 @@ echo
 echo "== adapters against the real storages (read-only, bounded) =="
 PLUGIN_DIR="/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing"
 ARGS=()
-if [ -d "${PLUGIN_DIR}" ]; then
+if [ "$(xcode-select -p 2>/dev/null)" = "/Library/Developer/CommandLineTools" ] && [ -d "${PLUGIN_DIR}" ]; then
   ARGS+=(-Xswiftc -plugin-path -Xswiftc "${PLUGIN_DIR}")
 fi
-PACKTRACE_REAL_USAGE_PROBE=1 swift test "${ARGS[@]}" --filter RealUsageCorpusProbeTests 2>&1 \
+PACKTRACE_REAL_USAGE_PROBE=1 swift test ${ARGS[@]+"${ARGS[@]}"} --filter RealUsageCorpusProbeTests 2>&1 \
   | grep -E '^\[|^   |^== |SKIPPED|error:' || true
 
 cat <<'TEXT'

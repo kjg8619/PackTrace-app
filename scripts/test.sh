@@ -18,4 +18,5 @@ if [ "$(xcode-select -p 2>/dev/null)" = "/Library/Developer/CommandLineTools" ] 
 fi
 
 echo "== swift test =="
-swift test "${ARGS[@]}" "$@"
+# ${ARGS[@]+...}: an empty array is "unbound" under set -u in macOS's bash 3.2.
+swift test ${ARGS[@]+"${ARGS[@]}"} "$@"
