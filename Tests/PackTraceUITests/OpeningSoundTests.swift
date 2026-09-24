@@ -75,9 +75,6 @@ struct OpeningSoundTests {
         cardsRise: .milliseconds(5),
         cardFlip: .milliseconds(10),
         cardSettle: .milliseconds(5),
-        // Wide enough that the slide (due when the transfer starts) is never
-        // raced by the engine leaving the card, even with the whole suite running
-        // in parallel (40 ms was not, under verify.sh's load).
         cardTransfer: .milliseconds(150),
         summarySettle: .milliseconds(5)
     )
@@ -116,6 +113,18 @@ struct OpeningSoundTests {
 
     /// Plays one whole opening — tear, every card, summary — and returns what was
     /// heard and what was obtained.
+    ///
+    /// The director's waits return at once, on the main actor. With real waits
+    /// the director's timer for a card's later cues races the engine's timer for
+    /// leaving the card; on the CI runner (a loaded VM) the engine won once and
+    /// the card's rare chime and slide were dropped, as designed when the card
+    /// has moved on. Wider timings only moved that threshold. Without the wait,
+    /// the director's job for a transition is queued on the main actor at the
+    /// transition itself, ahead of the engine's next wake-up, so each
+    /// transition's cues play in order and are dropped only by the next
+    /// transition: order and cancellation are what this checks. That every
+    /// delay falls inside the card's time on stage is checked against the
+    /// timeline in `cardCuesFollowTheTimeline`.
     private func runOpening(
         cards: [PackOpeningCard],
         timing: PackOpeningTiming,
@@ -132,6 +141,7 @@ struct OpeningSoundTests {
                 return recorder
             }
         )
+        director.sleep = { @MainActor _ in }
         director.attach(to: engine)
         engine.start()
         await waitUntil { engine.acceptsTearInput }
