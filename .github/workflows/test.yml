@@ -24,5 +24,9 @@ jobs:
         env:
           PACKTRACE_CATALOG_BUNDLE: ${{ vars.PACKTRACE_CATALOG_BUNDLE }}
         run: ./scripts/prepare-catalogs.sh
+      # One test at a time: the UI suites run on the main actor, and on a
+      # three-core runner 150 of them started together queue behind each other
+      # for tens of seconds, past the opening flow's waits. Locally the parallel
+      # run is fine (about 20 s); serial takes about 75 s.
       - name: Test
-        run: ./scripts/test.sh
+        run: ./scripts/test.sh --no-parallel
