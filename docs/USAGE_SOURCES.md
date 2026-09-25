@@ -162,16 +162,12 @@ OMP 규칙의 근거와 필드 의미는 `docs/OMP_USAGE_SCHEMA.md`에 그대로
 ## 9. 직접 확인하는 방법
 
 ```bash
-./scripts/usage-check.sh                  # 설치된 도구 + 어댑터가 실제 저장소를 어떻게 읽는지 + 이 프로필의 연결 상태 (읽기 전용)
 ./scripts/usage-connect.sh --status       # 실사용(production) 프로필의 연결·도구별 인정량
 ./scripts/usage-connect.sh codex          # 도구 연결 (연결 시점이 기준선, 과거 기록 소급 없음)
 ./scripts/usage-connect.sh --disconnect codex   # 연결 해제 (다른 도구는 그대로)
 ./scripts/test.sh            # 전체 회귀 (280+ 선언)
 ./scripts/verify.sh          # 게이트: 테스트 · release 빌드 · 카탈로그 3종 · pool · 앱 번들
 ```
-
-`usage-check.sh`는 아무것도 적립하지 않습니다. 각 도구의 저장 형식 인식 결과와, 예산 안에서 실제로 파싱된 확정 호출 수를 보여줍니다.
-이 머신에서의 결과는 아래 표의 "실제 과거 파싱" 열과 같습니다.
 
 앱에서 직접 확인하는 순서:
 
@@ -210,7 +206,7 @@ OMP 규칙의 근거와 필드 의미는 `docs/OMP_USAGE_SCHEMA.md`에 그대로
 | OpenCode | 연결·수집 경로 연결됨 | **있음** (`OpenCodeUsageAdapter`) | **5개** | **확인**: 실제 DB 21,854행에서 **8,732개 호출 파싱** | 없음(어댑터 단위까지) | 없음 |
 
 - 세 신규 도구는 **지원 완료로 표시하지 않는다.** 설정 화면의 연결 항목도 만들지 않았다(coordinator·UI 미구현이므로).
-- 세 어댑터의 실제 코퍼스 파싱을 옵트인 프로브(`PACKTRACE_REAL_USAGE_PROBE=1`, 읽기 전용 + 예산 한도)로 확인했다: Codex 59건, Claude Code 504건, OpenCode 8,732건 파싱.
+- 세 어댑터의 실제 코퍼스 파싱을 개발자 머신의 읽기 전용 프로브(예산 한도, 공개판에는 없음)로 확인했다: Codex 59건, Claude Code 504건, OpenCode 8,732건 파싱.
 - **실제 신규 적립·P 지급은 아직 미검증**이다: 연결 이후 자연 발생한 새 기록이 생기면 그때 확인한다(과거 기록은 소급 지급하지 않는다).
 - 설정 화면에는 도구별 연결 항목(감지 후보·형식 검사·기준선 진행·인정 토큰·연결/일시정지/연결 해제)이 있으며, 도구를 연결하면 그 시점이 기준선이 된다. 실제 적립이 확인되기 전까지는 검사 상태를 "지원"으로 올리지 않고 **형식 검사 결과**만 표시한다.
 - OpenCode는 확인된 스키마에 맞춰 읽기 전용으로만 접근한다. `finish` 값의 어휘는 미확인이라 보상 판단에 쓰지 않고 원문 그대로 기록만 한다.
@@ -229,5 +225,5 @@ OMP 규칙의 근거와 필드 의미는 `docs/OMP_USAGE_SCHEMA.md`에 그대로
 | Kimi | `~/.kimi-code/sessions/**/session_<id>/agents/*/wire.jsonl` `event.usage` | `inputOther` + `output` | `messageId` | 오류·취소 | 세션 3개(소량) |
 | Zed | `threads.db`(zstd 압축) | — | — | 미구현 | macOS 기본 압축 해제가 zstd를 지원하지 않음 |
 
-실제 저장소 파싱(옵트인 `PACKTRACE_REAL_USAGE_PROBE=1`, 예산 한도 1회): omo 525건 · senpi 643건 · grok 턴 인식 · kimi 1건 · hermes 328행 인식(기준선 모드라 적립 0). 모두 연결 뒤 사용량만 적립한다.
+실제 저장소 파싱(개발자 머신의 읽기 전용 프로브, 예산 한도 1회, 공개판에는 없음): omo 525건 · senpi 643건 · grok 턴 인식 · kimi 1건 · hermes 328행 인식(기준선 모드라 적립 0). 모두 연결 뒤 사용량만 적립한다.
 

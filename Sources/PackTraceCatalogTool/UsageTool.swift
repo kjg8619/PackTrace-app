@@ -46,9 +46,6 @@ enum UsageTool {
         case "status":
             try await status(log: log)
 
-        case "correction":
-            try await correction(flags: flags, log: log)
-
         default:
             throw UsageToolError.unknownMode(mode)
         }
@@ -80,57 +77,6 @@ enum UsageTool {
         return URL(fileURLWithPath: candidate.identity.canonicalPath)
     }
 
-    /// One incident's correction: dry-run by default, and the real apply only
-    /// when the caller states the size of the target set it expects. A plan made
-    /// against a different set or account is refused instead of applied.
-    static func correction(flags: [String: String], log: (String) -> Void) async throws {
-        guard let incidentID = flags["--incident"], !incidentID.isEmpty else {
-            throw UsageToolError.missingFlag("--incident")
-        }
-        // A name that is not a tool is an error: falling back to OpenCode planned
-        // a correction against the wrong source on a typo.
-        let name = flags["--tool"] ?? "opencode"
-        guard let tool = UsageToolKind(rawValue: name) else { throw UsageToolError.unknownTool(name) }
-        let apply = flags["--apply"] != nil
-        let (store, _) = try await openProduction()
-        defer { Task { await store.close() } }
-
-        let sources = try await store.allUsageSourceRows().filter { $0.tool == tool }
-        guard let source = sources.first else { throw UsageToolError.noCandidate(tool.rawValue) }
-        // Several roots of one tool: the plan would silently pick one of them.
-        guard sources.count == 1 else { throw UsageToolError.ambiguousSource(tool.rawValue, sources.count) }
-        let plan = try await store.usageCorrectionPlan(incidentID: incidentID, sourceID: source.sourceID)
-
-        log("== correction plan (\(apply ? "apply" : "dry-run")) ==")
-        log("  incident   \(plan.incidentID)")
-        log("  source     \(source.tool.rawValue) \(UsageSourceIdentity.mask(source.rootPath))")
-        log("  events     \(plan.eventCount)")
-        log("  excluded   \(plan.excludedTokens) tokens")
-        log("  digest     \(plan.eventDigest)")
-        log("  before     accepted=\(plan.beforeAcceptedTokens) points=\(plan.beforePoints) remainder=\(plan.beforeRemainder) balance=\(plan.beforeBalance)")
-        log("  after      accepted=\(plan.afterAcceptedTokens) points=\(plan.afterPoints) remainder=\(plan.afterRemainder)")
-        log("  adjustment \(plan.deltaPoints) P")
-        log("  expected   balance=\(plan.expectedBalance) P")
-        log("  applicable \(plan.isApplicable)\(plan.blockedReason.map { " (\($0))" } ?? "")")
-
-        guard apply else { return }
-        guard plan.isApplicable else { throw UsageCorrectionError.blocked(plan.blockedReason ?? "unknown") }
-        // The caller must state what it believes it is correcting.
-        if let expectedEvents = flags["--expect-events"], Int(expectedEvents) != plan.eventCount {
-            throw UsageCorrectionError.blocked("대상 이벤트 수가 기대값과 다릅니다(\(plan.eventCount) != \(expectedEvents))")
-        }
-        if let expectedTokens = flags["--expect-tokens"], Int(expectedTokens) != plan.excludedTokens {
-            throw UsageCorrectionError.blocked("제외 토큰이 기대값과 다릅니다(\(plan.excludedTokens) != \(expectedTokens))")
-        }
-        if let expectedDigest = flags["--expect-digest"], expectedDigest != plan.eventDigest {
-            throw UsageCorrectionError.blocked("대상 집합 지문이 기대값과 다릅니다")
-        }
-        let applied = try await store.applyUsageCorrection(plan)
-        log("== applied ==")
-        log("  adjustment \(applied.deltaPoints) P · valid accepted=\(applied.afterAcceptedTokens) points=\(applied.afterPoints) remainder=\(applied.afterRemainder)")
-        log("  corrections=\(try await store.corrections().count)")
-    }
-
     /// Read-only report of the real profile: sources, accepted tokens per tool
     /// and the shared account. It cannot create a database, run a migration or
     /// start collecting, even if the profile is missing or older.
@@ -159,15 +105,12 @@ enum UsageTool {
         case unknownTool(String)
         case unknownMode(String)
         case noCandidate(String)
-        case ambiguousSource(String, Int)
 
         var description: String {
             switch self {
-            case let .ambiguousSource(tool, count): "\(tool) has \(count) connected roots; correct one root at a time"
-
             case let .missingFlag(name): "missing required flag \(name)"
             case let .unknownTool(name): "unknown tool \(name) (\(UsageToolKind.allCases.map(\.rawValue).joined(separator: "|")))"
-            case let .unknownMode(mode): "unknown usage mode \(mode) (list|connect|disconnect|status|correction)"
+            case let .unknownMode(mode): "unknown usage mode \(mode) (list|connect|disconnect|status)"
             case let .noCandidate(tool): "no storage found for \(tool); pass --root"
             }
         }
